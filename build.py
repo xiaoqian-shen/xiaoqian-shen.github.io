@@ -88,7 +88,7 @@ def get_paper_entry(entry_key, entry):
     if 'journal' in entry.fields.keys():
         s += f"""<span style="font-family: Verdana;">{entry.fields['journal']}</span> {entry.fields['year']} <br>"""
 
-    artefacts = {'html': 'Project Page', 'pdf': 'Paper', 'supp': 'Supplementary', 'code': 'Code', 'video': 'Video'}
+    artefacts = {'html': 'Project Page', 'pdf': 'Paper', 'supp': 'Supplementary', 'code': 'Code', 'video': 'Video', 'model': 'Model','data':'Dataset'}
     i = 0
     for (k, v) in artefacts.items():
         if k in entry.fields.keys():
