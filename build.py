@@ -55,7 +55,7 @@ def get_author_dict():
     }
 
 
-def generate_person_html(persons, connection=", ", make_bold=True, make_bold_name='Xiaoqian Shen', add_links=True):
+def generate_person_html(persons, connection=", ", make_bold=True, make_bold_name=['Xiaoqian Shen', 'Xiaoqian Shen*'], add_links=True):
     links = get_author_dict() if add_links else {}
     s = ""
     for p in persons:
@@ -66,8 +66,8 @@ def generate_person_html(persons, connection=", ", make_bold=True, make_bold_nam
             string_part_i += name_part_i
         if string_part_i in links.keys():
             string_part_i = f'{string_part_i}</a>'
-        if make_bold and string_part_i == make_bold_name:
-            string_part_i = f'<span style="font-weight: bold";>{make_bold_name}</span>'
+        if make_bold and string_part_i in make_bold_name:
+            string_part_i = f'<span style="font-weight: bold";>{string_part_i}</span>'
         if p != persons[-1]:
             string_part_i += connection
         s += string_part_i
@@ -86,7 +86,11 @@ def get_paper_entry(entry_key, entry):
 
     s += f"""{generate_person_html(entry.persons['author'])} <br>"""
     if 'journal' in entry.fields.keys():
-        s += f"""<span style="font-family: Verdana;">{entry.fields['journal']}</span> {entry.fields['year']} <br>"""
+        try:
+            year = entry.fields['year']
+        except:
+            year = ''
+        s += f"""<span style="font-style: italic;">{entry.fields['journal']} {year} </span> <br>"""
 
     artefacts = {'html': 'Project Page', 'pdf': 'Paper', 'supp': 'Supplementary', 'code': 'Code', 'video': 'Video', 'model': 'Model','data':'Dataset'}
     i = 0
@@ -190,6 +194,23 @@ def get_index_html():
                 <img src="assets/img/profile.jpg" class="img-thumbnail" width="240px" alt="Profile picture">
             </div>
         </div>
+        
+        <h3>News</h3>
+        <table width="100%" align="center" border="0" cellspacing="0">
+          <tr>
+            <td width="60%" valign="middle">
+              <ul>
+                <li> <b>2023-07</b> One paper (HRS-Bench) gets accepted to ICCV'23 </li>
+                <li> <b>2023-04</b> We released MiniGPT-4 and received github 10k stars in 3 days </li>
+                <li> <b>2023-02</b> One paper (MoStGAN-V) gets accepted to CVPR'23 </li>
+                <li> <b>2022-09</b> Start my Master jounery in King Abdullah University of Science and Technology (KAUST) </li>
+                <li> <b>2022-07</b> One paper gets accepted to ECCV'22 </li>
+                <li> <b>2021-12</b> Join Vision-CAIR at King Abdullah University of Science and Technology as a visiting research studen</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+        
         <div class="row" style="margin-top: 1em;">
             <div class="col-md-10" style="">
                 <h3>Publications</h3>
