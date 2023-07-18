@@ -205,7 +205,7 @@ def get_index_html():
                 <li> <b>2023-02</b> One paper (MoStGAN-V) gets accepted to CVPR'23 </li>
                 <li> <b>2022-09</b> Start my Master jounery in King Abdullah University of Science and Technology (KAUST) </li>
                 <li> <b>2022-07</b> One paper gets accepted to ECCV'22 </li>
-                <li> <b>2021-12</b> Join Vision-CAIR at King Abdullah University of Science and Technology as a visiting research studen</li>
+                <li> <b>2021-12</b> Join Vision-CAIR at King Abdullah University of Science and Technology as a visiting research student</li>
               </ul>
             </td>
           </tr>
