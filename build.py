@@ -181,7 +181,7 @@ def get_index_html():
 </head>
 
 <body>
-    <div class="container" style="margin-left: 15em;">
+    <div class="container" style="alignment: center;">
         <div class="row" style="margin-top: 3em;">
             <div class="col-md-11" style="margin-bottom: 1em;">
             <h3 class="display-4" style="text-align: center;"><span style="font-weight: bold;">{name[0]}</span> {name[1]}&emsp;{name[2]}</h3>
