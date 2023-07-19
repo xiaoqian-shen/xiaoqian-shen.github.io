@@ -191,7 +191,7 @@ def get_index_html():
                 {bio_text}
             </div>
             <div class="col-md-4" style="">
-                <img src="assets/img/profile.jpg" class="img-thumbnail" width="240px" alt="Profile picture">
+                <img src="assets/img/profile.jpg" class="hoverZoomLink" width="300px" style="border-radius: 50%;" width="240px" alt="Profile picture">
             </div>
         </div>
         
