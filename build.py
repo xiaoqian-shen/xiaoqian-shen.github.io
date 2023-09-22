@@ -119,9 +119,9 @@ def get_proj_entry(entry_key, entry):
     s += f"""<img src="{entry.fields['img']}" class="img-fluid" alt="Project image">"""
     s += """</div><div class="col-sm-8">"""
     s += f"""<span style= "font-weight: bold;font-size: 18px;font-family: normal;">{entry.fields['title']}</span><br>"""
-    s += f"""{entry.fields['group']},   <span style="color: blue;">{entry.fields['org']}</span>,  {entry.fields['place']}, {entry.fields['year']} <br>"""
+    s += f"""{entry.fields['group']},   <span style="color: blue;">{entry.fields['org']}</span> <br> {entry.fields['place']}, {entry.fields['year']} <br>"""
     if 'info' in entry.fields.keys():
-        s += f"""&emsp;&emsp;<span style="font-family: Verdana;">{entry.fields['info']}</span><br>"""
+        s += f"""<span style="font-family: Verdana;">{entry.fields['info']}</span><br>"""
 
     artefacts = {'slides': 'Slides', 'video': 'Recording'}
     i = 0
