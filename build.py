@@ -220,7 +220,7 @@ def get_index_html():
         </div>
         <div class="row" style="margin-top: 1em;">
             <div class="col-md-10" style="">
-                <h3>Projects</h3>
+                <h3>Experience</h3>
                 <br>
                 {project}
             </div>
