@@ -76,7 +76,7 @@ def generate_person_html(persons, connection=", ", make_bold=True, make_bold_nam
 
 def get_paper_entry(entry_key, entry):
     s = """<div style="margin-bottom: 3em;"> <div class="row"><div class="col-sm-4">"""
-    s += f"""<img src="{entry.fields['img']}" border="0" class="img-fluid" width="300" height="60" alt="Project image">"""
+    s += f"""<img src="{entry.fields['img']}" border="0" width="260" height="150" alt="Project image">"""
     s += """</div><div class="col-sm-8">"""
 
     if 'award' in entry.fields.keys():
@@ -196,20 +196,47 @@ def get_index_html():
         </div>
         
         <h3>News</h3>
-        <table width="100%" align="center" border="0" cellspacing="0">
-          <tr>
-            <td width="60%" valign="middle">
-              <ul>
-                <li> <b>2023-07</b> One paper (HRS-Bench) gets accepted to ICCV'23 </li>
-                <li> <b>2023-04</b> We released MiniGPT-4 and received github 10k stars in 3 days </li>
-                <li> <b>2023-02</b> One paper (MoStGAN-V) gets accepted to CVPR'23 </li>
-                <li> <b>2022-09</b> Start my Master jounery in King Abdullah University of Science and Technology (KAUST) </li>
-                <li> <b>2022-07</b> One paper gets accepted to ECCV'22 </li>
-                <li> <b>2021-12</b> Join Vision-CAIR at King Abdullah University of Science and Technology as a visiting research student</li>
-              </ul>
-            </td>
-          </tr>
-        </table>
+        <style>
+          #scrollableDiv {{
+            width: 900px;
+            min-height: 100px;
+            height: 100px;
+            overflow-y: hidden;
+            opacity: 1;
+            transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+          }}
+        </style>
+
+        <div id="scrollableDiv" onmouseover="showScrollbar()" onmouseout="hideScrollbar()">
+          <table width="100%" align="left" border="0" cellspacing="0">
+            <tr>
+              <td width="60%" valign="middle">
+                <ul>
+                  <li> <b>2023-07</b> One paper (HRS-Bench) gets accepted to ICCV'23 </li>
+                  <li> <b>2023-04</b> We released MiniGPT-4 and received GitHub 10k stars in 3 days </li>
+                  <li> <b>2023-02</b> One paper (MoStGAN-V) gets accepted to CVPR'23 </li>
+                  <li> <b>2022-09</b> Started my Master journey at KAUST </li>
+                  <li> <b>2022-07</b> One paper gets accepted to ECCV'22 </li>
+                  <li> <b>2021-12</b> Joined Vision-CAIR at KAUST as a visiting research student</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <script>
+          function showScrollbar() {{
+            var div = document.getElementById('scrollableDiv');
+            div.style.height = div.scrollHeight + 'px';
+            div.style.opacity = 1;
+          }}
+
+          function hideScrollbar() {{
+            var div = document.getElementById('scrollableDiv');
+            div.style.height = '100px';
+            div.style.opacity = 1;
+          }}
+        </script>
         
         <div class="row" style="margin-top: 1em;">
             <div class="col-md-10" style="">
