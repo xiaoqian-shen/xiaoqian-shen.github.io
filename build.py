@@ -10,7 +10,7 @@ def get_personal_data():
     bio_text = f"""
                 <p>
                 <span style="font-weight: bold;">Bio:</span>
-                I am currently a Master student of Computer Science at <a href="https://cemse.kaust.edu.sa/" target="_blank">King
+                I am currently a PhD student of Computer Science at <a href="https://cemse.kaust.edu.sa/" target="_blank">King
                 Abdullah University of Science and Technology</a> supervised by <a
                     href="https://cemse.kaust.edu.sa/people/person/mohamed-elhoseiny" target="_blank">Mohamed
                 Elhoseiny</a>.
@@ -20,7 +20,7 @@ def get_personal_data():
             <p>
                 <span style="font-weight: bold;">Research:</span>
                 I am excited about complex problems that can be tackled with learning-based systems. Currently, my
-                research focuses on generative models, spatiotemporal representation and low-resource learning.
+                research focuses on generative models, vision-language and low-resource learning.
             <p>
             <span style="font-family: Monaco, monospace;">Feel free to reach out to me:</span>  <span style="font-weight: bold;"><a style="color: black;" href="mailto:xiaoqian.shen@kaust.edu.sa">xiaoqian.shen@kaust.edu.sa</a></span></p> 
             </p>
@@ -178,9 +178,10 @@ def get_index_html():
 
   <title>{name[0] + ' ' + name[1]}</title>
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 
-<body>
+<body style="font-family: 'Crimson Pro', serif;">
     <div class="container" style="alignment: center;">
         <div class="row" style="margin-top: 3em;">
             <div class="col-md-11" style="margin-bottom: 1em;">
