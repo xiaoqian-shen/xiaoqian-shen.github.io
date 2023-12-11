@@ -357,12 +357,11 @@ img {
 
 header {
   width:232px;
-  float:left;
+  float:inherit;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
   padding-top:4.0em;
   text-align:center;
-  margin-left: -80px;
 }
 
 header ul {
