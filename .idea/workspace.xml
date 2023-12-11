@@ -5,34 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43b16232-b05a-43d3-967b-71dd7f4c3e72" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/CNAME" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/css/font.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/css/font_sans_serif.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/css/publications-no-dark-mode.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/css/publications.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/css/style-no-dark-mode.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/files/resume.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/img/avatar.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/img/favicon-dark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/img/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/img/pub/chatcap.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/img/pub/chatcap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/img/pub/condos.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/img/pub/dial.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/img/pub/hgr-net.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/img/pub/hrs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/img/pub/inr-gan.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/img/pub/kemre.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/img/pub/minigpt-v2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/img/pub/minigpt4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/img/pub/mostgan.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/img/pub/splice.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/img/pub/storygptv.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/js/favicon-switcher.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/js/scale.fix.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-light.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-light.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +144,7 @@
       <workItem from="1702283622130" duration="441000" />
       <workItem from="1702285466592" duration="1589000" />
       <workItem from="1702287577976" duration="856000" />
-      <workItem from="1702288437320" duration="1730000" />
+      <workItem from="1702288437320" duration="1971000" />
     </task>
     <servers />
   </component>
