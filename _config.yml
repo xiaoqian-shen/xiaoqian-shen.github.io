@@ -41,3 +41,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - minimal-light.gemspec
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - node_modules
