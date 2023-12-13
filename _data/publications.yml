@@ -6,7 +6,7 @@ main:
     pdf: https://arxiv.org/abs/2312.02252
     code: https://github.com/xiaoqian-shen/StoryGPT-V
     image: ./assets/img/pub/storygptv.png
-    page: https://storygpt-v.s3.amazonaws.com/index.html
+    page: https://xiaoqian-shen.github.io/StoryGPT-V
 
   - title: "MiniGPT-v2: Large Language Model as a Unified Interface for Vision-Language Multi-task Learning"
     authors: Jun Chen, Deyao Zhu, <strong>Xiaoqian Shen</strong>, Xiang Li, Zechun Liu, Pengchuan Zhang, Raghuraman Krishnamoorthi, Vikas Chandra, Yunyang Xiong, Mohamed Elhoseiny
