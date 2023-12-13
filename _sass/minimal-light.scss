@@ -362,6 +362,7 @@ header {
   -webkit-font-smoothing:subpixel-antialiased;
   padding-top:4.0em;
   text-align:center;
+  margin-left: -80px;
 }
 
 header ul {
@@ -430,7 +431,7 @@ header ul a strong {
 }
 
 section {
-  width:650px;
+  width:750px;
   float:right;
   padding-top:4.0em;
   padding-bottom:50px;
@@ -472,10 +473,6 @@ footer {
     float:none;
     position:static;
     width:auto;
-  }
-
-  header {
-    padding-right:320px;
   }
 
   section {
