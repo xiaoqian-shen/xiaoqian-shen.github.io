@@ -5,7 +5,7 @@ main:
     conference: Arxiv preprint 2023
     pdf: https://arxiv.org/abs/2312.02252
     code: https://github.com/xiaoqian-shen/StoryGPT-V
-    image: ./assets/img/pub/storygptv.png
+    video: ./assets/img/pub/storygptv.mp4
     page: https://xiaoqian-shen.github.io/StoryGPT-V
 
   - title: "MiniGPT-v2: Large Language Model as a Unified Interface for Vision-Language Multi-task Learning"
