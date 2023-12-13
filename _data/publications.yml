@@ -25,7 +25,7 @@ main:
     image: ./assets/img/pub/dial.png
 
   - title: "HRS-Bench: Holistic, Reliable and Scalable Benchmark for Text-to-Image Models"
-    authors: Eslam Bakr, <strong>Xiaoqian Shen</strong>, Pengzhan Sun, Faizan Khan, Erran Li, Mohamed Elhoseiny
+    authors: Eslam Bakr, <strong>Xiaoqian Shen*</strong>, Pengzhan Sun*, Faizan Khan*, Erran Li, Mohamed Elhoseiny
     conference_short: ICCV
     conference: ICCV 2023
     pdf: https://arxiv.org/abs/2304.05390
@@ -43,7 +43,7 @@ main:
     page: https://xiaoqian-shen.github.io/MoStGAN-V
 
   - title: "MiniGPT-4: Enhancing Vision-language Understanding with Advanced Large Language Models"
-    authors: Jun Chen, Deyao Zhu, <strong>Xiaoqian Shen</strong>, Xiang Li, Mohamed Elhoseiny
+    authors: Jun Chen*, Deyao Zhu*, <strong>Xiaoqian Shen</strong>, Xiang Li, Mohamed Elhoseiny
     conference: Arxiv preprint, 2023
     pdf: https://arxiv.org/abs/2304.10592
     code: https://github.com/Vision-CAIR/MiniGPT-4
