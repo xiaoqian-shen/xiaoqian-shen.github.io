@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="43b16232-b05a-43d3-967b-71dd7f4c3e72" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/publications.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/publications.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/files/resume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/files/resume.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,9 +69,9 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/files" />
       <recent name="$PROJECT_DIR$/assets/img/pub" />
       <recent name="$PROJECT_DIR$/assets/css" />
-      <recent name="$PROJECT_DIR$/assets/files" />
       <recent name="$PROJECT_DIR$/assets/img" />
       <recent name="$PROJECT_DIR$/assets/img/publications" />
     </key>
@@ -157,7 +157,8 @@
       <workItem from="1702458570912" duration="7474000" />
       <workItem from="1702481057819" duration="239000" />
       <workItem from="1702550645066" duration="633000" />
-      <workItem from="1704351527182" duration="1220000" />
+      <workItem from="1704351527182" duration="1229000" />
+      <workItem from="1704362647743" duration="24000" />
     </task>
     <servers />
   </component>
