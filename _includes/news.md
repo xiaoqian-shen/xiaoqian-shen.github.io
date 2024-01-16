@@ -11,9 +11,9 @@
 </style>
 
 <ul id="scrollableDiv" onmouseover="showScrollbar()" onmouseout="hideScrollbar()">
+  <li><strong>[Jan. 2024]</strong> One paper (MiniGPT-4) gets accepted to ICLR’24</li>
   <li><strong>[Nov. 2023]</strong> Successfully defended my Master thesis</li>
   <li><strong>[July. 2023]</strong> One paper (HRS-Bench) gets accepted to ICCV’23</li>
-  <li><strong>[Apr. 2023]</strong> We released MiniGPT-4 and received GitHub 10k stars in 3 days</li>
   <li><strong>[Feb. 2023]</strong> One paper (MoStGAN-V) gets accepted to CVPR’23</li>
   <li><strong>[Sep. 2022]</strong> Started my Master journey at KAUST</li>
   <li><strong>[July. 2022]</strong> One paper gets accepted to ECCV’22</li>

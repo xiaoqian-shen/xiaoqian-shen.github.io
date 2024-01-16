@@ -8,6 +8,16 @@ main:
     video: ./assets/img/pub/storygptv.mp4
     page: https://xiaoqian-shen.github.io/StoryGPT-V
 
+  - title: "MiniGPT-4: Enhancing Vision-language Understanding with Advanced Large Language Models"
+    authors: Jun Chen*, Deyao Zhu*, <strong>Xiaoqian Shen</strong>, Xiang Li, Mohamed Elhoseiny
+    conference_short: ICLR
+    conference: ICLR 2024
+    pdf: https://arxiv.org/abs/2304.10592
+    code: https://github.com/Vision-CAIR/MiniGPT-4
+    page: https://minigpt-4.github.io
+    image: ./assets/img/pub/minigpt4.png
+    notes: Github 20k+ Stars
+
   - title: "MiniGPT-v2: Large Language Model as a Unified Interface for Vision-Language Multi-task Learning"
     authors: Jun Chen, Deyao Zhu, <strong>Xiaoqian Shen</strong>, Xiang Li, Zechun Liu, Pengchuan Zhang, Raghuraman Krishnamoorthi, Vikas Chandra, Yunyang Xiong, Mohamed Elhoseiny
     conference: Arxiv preprint 2023
@@ -42,15 +52,6 @@ main:
     image: ./assets/img/pub/mostgan.png
     page: https://xiaoqian-shen.github.io/MoStGAN-V
 
-  - title: "MiniGPT-4: Enhancing Vision-language Understanding with Advanced Large Language Models"
-    authors: Jun Chen*, Deyao Zhu*, <strong>Xiaoqian Shen</strong>, Xiang Li, Mohamed Elhoseiny
-    conference: Arxiv preprint, 2023
-    pdf: https://arxiv.org/abs/2304.10592
-    code: https://github.com/Vision-CAIR/MiniGPT-4
-    page: https://minigpt-4.github.io
-    image: ./assets/img/pub/minigpt4.png
-    notes: Github 20k+ Stars
-
   - title: "ChatGPT Asks, BLIP-2 Answers: Automatic Questioning Towards Enriched Visual Descriptions"
     authors: Deyao Zhu, Jun Chen, Kilichbek Haydarov, <strong>Xiaoqian Shen</strong>, Wenxuan Zhang, Mohamed Elhoseiny
     conference: Arxiv preprint, 2023
@@ -74,9 +75,3 @@ main:
     pdf: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10167829
     image: ./assets/img/pub/condos.png
     conference_short: TMI
-
-  - title: "KeMRE: knowledge-enhanced medical relation extraction for Chinese medicine instructions"
-    authors: Tao Qi, Shan Qiu, <strong>Xiaoqian Shen</strong>, Haopu Chen, Shuai Yang, Hao Wen, Ya  Zhang, Yuanqing Wu, Yongfeng Huang
-    conference: Journal of Biomedical Informatics
-    pdf: https://www.sciencedirect.com/science/article/pii/S1532046421001623
-    image: ./assets/img/pub/kemre.jpg
