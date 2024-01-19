@@ -9,7 +9,7 @@ main:
     page: https://xiaoqian-shen.github.io/StoryGPT-V
 
   - title: "MiniGPT-4: Enhancing Vision-language Understanding with Advanced Large Language Models"
-    authors: Jun Chen*, Deyao Zhu*, <strong>Xiaoqian Shen</strong>, Xiang Li, Mohamed Elhoseiny
+    authors: Deyao Zhu*, Jun Chen*, <strong>Xiaoqian Shen</strong>, Xiang Li, Mohamed Elhoseiny
     conference_short: ICLR
     conference: ICLR 2024
     pdf: https://arxiv.org/abs/2304.10592
