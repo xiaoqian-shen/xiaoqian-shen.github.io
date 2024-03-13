@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43b16232-b05a-43d3-967b-71dd7f4c3e72" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/img/pub/hypercgan.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/publications.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/publications.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_includes/news.md" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/news.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/files/resume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/files/resume.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,6 +167,8 @@
       <workItem from="1710100961237" duration="1094000" />
       <workItem from="1710239779717" duration="73000" />
       <workItem from="1710328322149" duration="133000" />
+      <workItem from="1710328490566" duration="13000" />
+      <workItem from="1710328566995" duration="33000" />
     </task>
     <servers />
   </component>
