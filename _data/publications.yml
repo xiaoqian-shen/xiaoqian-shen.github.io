@@ -1,4 +1,10 @@
 main:
+  - title: Adversarial text to continous image generation
+    authors: Kilichbek Haydarov, Aashiq Muhamed, <strong>Xiaoqian Shen</strong>, Jovana Lazarevic, Ivan Skorokhodov, Chamuditha Jayanga Galappaththige, Mohamed Elhoseiny
+    conference_short: CVPR
+    conference: CVPR 2024
+    image: ./assets/img/pub/hypercgan.png
+    page: https://hypercgan-web.s3.amazonaws.com/index.html
 
   - title: Large Language Models as Consistent Story Visualizers
     authors: <strong>Xiaoqian Shen</strong>, Mohamed Elhoseiny
@@ -54,7 +60,8 @@ main:
 
   - title: "ChatGPT Asks, BLIP-2 Answers: Automatic Questioning Towards Enriched Visual Descriptions"
     authors: Deyao Zhu, Jun Chen, Kilichbek Haydarov, <strong>Xiaoqian Shen</strong>, Wenxuan Zhang, Mohamed Elhoseiny
-    conference: Arxiv preprint, 2023
+    conference_short: TMLR
+    conference: TMLR
     pdf: https://arxiv.org/abs/2303.06594
     code: https://github.com/Vision-CAIR/ChatCaptioner
     image: ./assets/img/pub/chatcap.gif
