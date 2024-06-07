@@ -13,6 +13,7 @@ I am currently a PhD student of Computer Science at [King Abdullah University of
 
 {% include_relative _includes/news.md %}
 
+{% include_relative _includes/experience.md %}
+
 {% include_relative _includes/publications.md %}
 
-{% include_relative _includes/experience.md %}
