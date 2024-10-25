@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>Xiaoqian Shen | </title>
+    <title>Xiaoqian Shen</title>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -137,10 +137,116 @@
 <h2 id="experience">Experience</h2>
 
 <ul style="margin:0 0 5px;">
-  <li>[May 2024 - Sep 2024] Research Scientist Intern, XR Core AI, Meta</li>
-  <li>[Dec 2021 - Mar 2022] Visiting Research Student at Mohamed Elhoseiny's Group, KAUST</li>
-  <li>[Dec 2020 - Mar 2021] Research Assistant at Yongfeng Huang's Group, Tsinghua University</li>
+  <li>[May 2024 - Nov 2024] Research Scientist Intern, XR Core AI, <strong>Meta</strong></li>
+  <li>[Dec 2021 - Mar 2022] Visiting Research Student at Mohamed Elhoseiny's Group, <strong>KAUST</strong></li>
+  <li>[Dec 2020 - Mar 2021] Research Assistant at Yongfeng Huang's Group, <strong>Tsinghua University</strong></li>
 </ul>
+
+<script>
+  let activeBlock = null; // To keep track of the currently active block
+
+  // Show publications based on type
+  function showPublications(type) {
+    const allItems = document.querySelectorAll('.pub-item');
+
+    // Show or hide items based on the type
+    allItems.forEach(item => {
+      const itemTypes = item.getAttribute('data-type').split(',');
+      if (type === 'all' || itemTypes.includes(type)) {
+        item.style.display = 'block'; // Show matching items
+      } else {
+        item.style.display = 'none'; // Hide non-matching items
+      }
+    });
+  }
+
+  // Function to handle mouse enter and keep the active type
+  function handleMouseEnter(block) {
+    // Remove the active class from the previously active block
+    if (activeBlock) {
+      activeBlock.classList.remove('active');
+    }
+    
+    // Set the current block as active and show its publications
+    activeBlock = block;
+    activeBlock.classList.add('active');
+    showPublications(block.getAttribute('data-type')); // Show publications for the active type
+  }
+
+  // Show all publications by default on page load
+  window.onload = function() {
+    showPublications('all');
+  };
+</script>
+
+<!-- CSS to style the filter blocks and publication items -->
+<style>
+  .pub-type-filter {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .pub-type {
+    width: 80px; /* Set a fixed width for all blocks */
+    height: 26px; /* Set a fixed height */
+    line-height: 24px; /* Vertically center the text */
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+    border: 2px solid transparent;
+  }
+
+  .pub-type[data-type="all"] {
+      background-color: #aadaac; /* Green */
+      /*color: #4CAF50;*/
+  }
+    
+  .pub-type[data-type="mllm"] {
+      background-color: #f4a286; /* Blue */
+  }
+    
+  .pub-type[data-type="genai"] {
+      background-color: #9abcec; /* Orange */
+  }
+
+/* Hover state */
+.pub-type:hover {
+  opacity: 0.8; /* Slight transparency on hover */
+}
+
+/* Active class for keeping the border color */
+.active {
+  border-color: inherit; /* Retain the inherited border color */
+}
+
+/* Change background and text color on hover */
+.pub-type[data-type="all"]:hover,
+.active[data-type="all"] {
+  background-color: #4dae50; /* Darker green */
+  color: #e0e0e0; /* Light gray text */
+}
+
+.pub-type[data-type="mllm"]:hover,
+.active[data-type="mllm"] {
+  background-color: #e64a19; /* Darker blue */ 
+  color: white; /* White text */
+}
+
+.pub-type[data-type="genai"]:hover,
+.active[data-type="genai"] {
+  background-color: #1e88e5; /* Darker orange */
+  color: white; /* White text */
+}
+
+  .pub-item {
+    display: none; /* Initially hidden */
+  }
+</style>
 
 <p><br /></p>
 <h2 id="publications" style="margin: 2px 0px -15px;">Publications <temp style="font-size:15px;">[</temp><a href="https://scholar.google.com/citations?hl=en&amp;user=uToGtIwAAAAJ" target="_blank" style="font-size:15px;">Google Scholar</a><temp style="font-size:15px;">]</temp></h2>
@@ -148,9 +254,53 @@
 <div class="publications">
 <ol class="bibliography">
 
+<div class="pub-type-filter">
+  <div class="pub-type" data-type="all" onmouseover="showPublications('all')">All</div>
+  <div class="pub-type" data-type="genai" onmouseover="showPublications('genai')">GenAI</div>
+  <div class="pub-type" data-type="mllm" onmouseover="showPublications('mllm')">MLLM</div>
+</div>
 
 
-<li>
+
+<li class="pub-item" data-type="mllm">
+<div class="pub-row">
+  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+     
+    <img src="./assets/img/pub/longvu.png" playsinline="" class="teaser img-fluid z-depth-1" style="width=100;height=40%" />
+    
+    
+    
+     
+    <abbrp class="badge">Preprint</abbrp>
+    
+  </div>
+  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+      <div class="title"><a href="https://arxiv.org/abs/2410.17434">LongVU: Spatiotemporal Adaptive Compression for Long Video-Language Understanding</a></div>
+      <div class="author"><strong>Xiaoqian Shen</strong>, Yunyang Xiong, Changsheng Zhao, Lemeng Wu, Jun Chen, Chenchen Zhu, Zechun Liu, Fanyi Xiao, Balakrishnan Varadarajan, Florian Bordes, Zhuang Liu, Hu Xu, Hyunwoo J. Kim, Bilge Soran, Raghuraman Krishnamoorthi, Mohamed Elhoseiny, Vikas Chandra</div>
+      <div class="periodical"><em>Arxiv preprint 2024</em>
+      </div>
+    <div class="links">
+       
+      <a href="https://vision-cair.github.io/LongVU" target="_blank" class="btn btn-sm z-depth-0" role="button" style="font-size:12px;">Project Page</a>
+      
+       
+      <a href="https://arxiv.org/abs/2410.17434" target="_blank" class="btn btn-sm z-depth-0" role="button" style="font-size:12px;">PDF</a>
+      
+       
+      <a href="https://github.com/Vision-CAIR/LongVU" target="_blank" class="btn btn-sm z-depth-0" role="button" style="font-size:12px;">Code</a>
+      
+      
+      
+      
+    </div>
+  </div>
+</div>
+<br />
+</li>
+
+
+
+<li class="pub-item" data-type="mllm">
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
      
@@ -159,6 +309,7 @@
     
      
     <abbr class="badge">ECCV</abbr>
+    
     
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
@@ -182,13 +333,12 @@
     </div>
   </div>
 </div>
+<br />
 </li>
 
-<br />
 
 
-
-<li>
+<li class="pub-item" data-type="">
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
      
@@ -197,6 +347,7 @@
     
      
     <abbr class="badge">ECCV</abbr>
+    
     
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
@@ -220,13 +371,12 @@
     </div>
   </div>
 </div>
+<br />
 </li>
 
-<br />
 
 
-
-<li>
+<li class="pub-item" data-type="genai">
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
      
@@ -235,6 +385,7 @@
     
      
     <abbr class="badge">CVPR</abbr>
+    
     
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
@@ -254,13 +405,12 @@
     </div>
   </div>
 </div>
+<br />
 </li>
 
-<br />
 
 
-
-<li>
+<li class="pub-item" data-type="mllm,genai">
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
     
@@ -269,6 +419,9 @@
     <source src="./assets/img/pub/storygptv.mp4" type="video/mp4" />
     </video>
     
+    
+     
+    <abbrp class="badge">Preprint</abbrp>
     
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
@@ -292,13 +445,12 @@
     </div>
   </div>
 </div>
+<br />
 </li>
 
-<br />
 
 
-
-<li>
+<li class="pub-item" data-type="mllm">
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
      
@@ -307,6 +459,7 @@
     
      
     <abbr class="badge">ICLR</abbr>
+    
     
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
@@ -332,19 +485,21 @@
     </div>
   </div>
 </div>
+<br />
 </li>
 
-<br />
 
 
-
-<li>
+<li class="pub-item" data-type="mllm">
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
      
     <img src="./assets/img/pub/minigpt-v2.png" playsinline="" class="teaser img-fluid z-depth-1" style="width=100;height=40%" />
     
     
+    
+     
+    <abbrp class="badge">Preprint</abbrp>
     
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
@@ -368,13 +523,12 @@
     </div>
   </div>
 </div>
+<br />
 </li>
 
-<br />
 
 
-
-<li>
+<li class="pub-item" data-type="genai">
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
      
@@ -383,6 +537,7 @@
     
      
     <abbr class="badge">ICCV</abbr>
+    
     
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
@@ -406,13 +561,12 @@
     </div>
   </div>
 </div>
+<br />
 </li>
 
-<br />
 
 
-
-<li>
+<li class="pub-item" data-type="genai">
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
      
@@ -421,6 +575,7 @@
     
      
     <abbr class="badge">CVPR</abbr>
+    
     
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
@@ -444,13 +599,12 @@
     </div>
   </div>
 </div>
+<br />
 </li>
 
-<br />
 
 
-
-<li>
+<li class="pub-item" data-type="mllm">
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
      
@@ -459,6 +613,7 @@
     
      
     <abbr class="badge">TMLR</abbr>
+    
     
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
@@ -482,13 +637,12 @@
     </div>
   </div>
 </div>
+<br />
 </li>
 
-<br />
 
 
-
-<li>
+<li class="pub-item" data-type="">
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
      
@@ -497,6 +651,7 @@
     
      
     <abbr class="badge">ECCV</abbr>
+    
     
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
@@ -520,13 +675,12 @@
     </div>
   </div>
 </div>
+<br />
 </li>
 
-<br />
 
 
-
-<li>
+<li class="pub-item" data-type="">
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
      
@@ -535,6 +689,7 @@
     
      
     <abbr class="badge">TMI</abbr>
+    
     
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
@@ -554,14 +709,28 @@
     </div>
   </div>
 </div>
-</li>
-
 <br />
+</li>
 
 
 
 </ol>
 </div>
+
+<h2 id="services">Services</h2>
+
+<h4 style="margin:0 10px 0;">Conference Reviewers</h4>
+
+<ul style="margin:0 0 5px;">
+  <li>CVPR, ECCV, AAAI, ICLR</li>
+  <li>SIGGRAPH Asia, NeurIPSW</li>
+</ul>
+
+<h4 style="margin:0 10px 0;">Journal Reviewers</h4>
+
+<ul style="margin:0 0 20px;">
+  <li>IJCV, CVIU</li>
+</ul>
 
 
 
