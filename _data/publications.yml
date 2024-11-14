@@ -28,7 +28,7 @@ main:
     page: https://affective-visual-dialog.github.io
     image: ./assets/img/pub/dial.png
 
-  - title: Adversarial text to continous image generation
+  - title: "Adversarial text to continous image generation"
     authors: Kilichbek Haydarov, Aashiq Muhamed, <strong>Xiaoqian Shen</strong>, Jovana Lazarevic, Ivan Skorokhodov, Chamuditha Jayanga Galappaththige, Mohamed Elhoseiny
     conference_short: CVPR
     conference: CVPR 2024
@@ -36,7 +36,7 @@ main:
     page: https://hypercgan-web.s3.amazonaws.com/index.html
     type: genai
 
-  - title: Large Language Models as Consistent Story Visualizers
+  - title: "Large Language Models as Consistent Story Visualizers"
     authors: <strong>Xiaoqian Shen</strong>, Mohamed Elhoseiny
     conference: Arxiv preprint 2023
     pdf: https://arxiv.org/abs/2312.02252

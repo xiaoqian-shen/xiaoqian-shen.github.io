@@ -5,20 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43b16232-b05a-43d3-967b-71dd7f4c3e72" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/img/pub/longvu.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_data/publications.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/publications.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/experience.md" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/experience.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/publications.md" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/publications.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/services.md" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/services.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/css/publications.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/css/publications.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/files/resume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/files/resume.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/publications.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/publications.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/files/resume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/files/resume.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/index.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,6 +189,8 @@
       <workItem from="1721369655802" duration="932000" />
       <workItem from="1729829875262" duration="16000" />
       <workItem from="1729829897245" duration="7245000" />
+      <workItem from="1729837278477" duration="112000" />
+      <workItem from="1731586151518" duration="137000" />
     </task>
     <servers />
   </component>
