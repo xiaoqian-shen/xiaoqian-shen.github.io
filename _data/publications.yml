@@ -32,6 +32,7 @@ main:
     authors: Kilichbek Haydarov, Aashiq Muhamed, <strong>Xiaoqian Shen</strong>, Jovana Lazarevic, Ivan Skorokhodov, Chamuditha Jayanga Galappaththige, Mohamed Elhoseiny
     conference_short: CVPR
     conference: CVPR 2024
+    pdf: https://openaccess.thecvf.com/content/CVPR2024/papers/Haydarov_Adversarial_Text_to_Continuous_Image_Generation_CVPR_2024_paper.pdf
     image: ./assets/img/pub/hypercgan.png
     page: https://hypercgan-web.s3.amazonaws.com/index.html
     type: genai
