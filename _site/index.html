@@ -781,6 +781,7 @@
             padding: 1px 3px;
             border-radius: 3px;
             position: absolute;
+            transform: translateY(10px) translateX(30px);
         }
         .gallery-popup {
             display: none;
@@ -918,16 +919,39 @@
         { name: "Santorini", coords: [36.3932, 25.4615], zoomLevel: 2 },
         // America
         { name: "San Francisco", coords: [37.7749, -122.4194], zoomLevel: 2 },
+        { name: "Los Angeles", coords: [34.0522, -118.2436], zoomLevel: 2 },
+        { name: "New York", coords: [40.7128, -74.0060], zoomLevel: 2 },
+        { name: "Boston", coords: [42.3555, -71.0565], zoomLevel: 2 },
+        { name: "Philadelphia", coords: [39.9526, -75.1652], zoomLevel: 2 },
         { name: "Mexico City", coords: [19.4326, -99.1332], zoomLevel: 3 },
         { name: "Guanajuato", coords: [21.0190, -101.2574], zoomLevel: 2 },
         { name: "Vancouver", coords: [49.2827, -123.1207], zoomLevel: 2 },
-        // Asia
+        // China
         { name: "Tibet", coords: [29.6472, 91.1174], zoomLevel: 2 },
         { name: "Sichuan", coords: [30.6509, 104.0757], zoomLevel: 2 },
+        { name: "Beijing", coords: [39.9042, 116.4074], zoomLevel: 2 },
+        { name: "Fujian", coords: [26.0998, 119.2966], zoomLevel: 2 },
+        { name: "Tianjin", coords: [39.0851, 117.1994], zoomLevel: 2 },
+        { name: "Hebei", coords: [38.0360, 114.4698], zoomLevel: 2 },
+        { name: "Hunan", coords: [28.1142, 112.9833], zoomLevel: 2 },
+        { name: "Guangdong", coords: [23.3417, 113.4244], zoomLevel: 2 },
+        { name: "Gansu", coords: [36.0594, 103.8263], zoomLevel: 2 },
+        { name: "Jilin", coords: [43.8378, 126.5494], zoomLevel: 2 },
+        { name: "Liaoning", coords: [41.8357, 123.4291], zoomLevel: 2 },
+        { name: "Qinghai", coords: [35.7452, 96.1345], zoomLevel: 2 },
+        { name: "Shaanxi", coords: [35.1917, 108.8701], zoomLevel: 2 },
+        { name: "Shandong", coords: [36.6683, 117.0204], zoomLevel: 2 },
+        { name: "Shanxi", coords: [37.8722, 112.5627], zoomLevel: 2 },
+        { name: "Yunnan", coords: [25.0453, 102.7097], zoomLevel: 2 },
+        { name: "Shanghai", coords: [31.2304, 121.4737], zoomLevel: 2 },
+        { name: "Hong Kong", coords: [22.3193, 114.1694], zoomLevel: 2 },
+        // Asia
         { name: "Hanoi", coords: [21.0278, 105.8342], zoomLevel: 2 },
         { name: "Ella", coords: [6.8667, 81.0466], zoomLevel: 3 },
         { name: "Sigiriya", coords: [7.9570, 80.7603], zoomLevel: 2 },
+        { name: "Colombo", coords: [6.9271, 79.8612], zoomLevel: 2 },
         { name: "Muscat", coords: [23.5880, 58.3829], zoomLevel: 2 },
+        { name: "Jeddah", coords: [21.5292, 39.1611], zoomLevel: 2 },
         // Africa
         { name: "Cairo", coords: [30.0444, 31.2357], zoomLevel: 3 },
         { name: "Aswan", coords: [24.0889, 32.8998], zoomLevel: 2 },
@@ -937,6 +961,7 @@
         { name: "Tangier", coords: [35.7595, -5.8340], zoomLevel: 3 },
         { name: "Fez", coords: [34.0181, -5.0078], zoomLevel: 5 },
         { name: "Chefchaouen", coords: [35.1688, -5.2684], zoomLevel: 5 },
+        { name: "Casablanca", coords: [33.5731, -7.5898], zoomLevel: 5 },
     ];
 
     var cityImages = {
@@ -958,9 +983,6 @@
         "Budapest": [
             "https://story-vl.s3.us-east-1.amazonaws.com/map/budapest0.JPG",
             "https://story-vl.s3.us-east-1.amazonaws.com/map/budapest1.jpg"
-        ],
-        "Bratislava": [
-
         ],
         "Barcelona": [
             "https://story-vl.s3.us-east-1.amazonaws.com/map/barcelona0.JPG",
@@ -986,15 +1008,6 @@
             "https://story-vl.s3.us-east-1.amazonaws.com/map/santorini0.JPG",
             "https://story-vl.s3.us-east-1.amazonaws.com/map/santorini1.JPG",
         ],
-        "San Francisco": [
-
-        ],
-        "Mexico City": [
-
-        ],
-        "Guanajuato": [
-
-        ],
         "Vancouver": [
            "https://story-vl.s3.us-east-1.amazonaws.com/map/vancouver0.JPG",
            "https://story-vl.s3.us-east-1.amazonaws.com/map/vancouver1.JPG",
@@ -1012,21 +1025,6 @@
             "https://story-vl.s3.us-east-1.amazonaws.com/map/hanoi1.JPG",
             "https://story-vl.s3.us-east-1.amazonaws.com/map/hanoi2.JPG",
             "https://story-vl.s3.us-east-1.amazonaws.com/map/hanoi3.JPG",
-        ],
-        "Ella": [
-
-        ],
-        "Sigiriya": [
-
-        ],
-        "Cairo": [
-
-        ],
-        "Aswan": [
-
-        ],
-        "Luxor": [
-
         ],
         "Merzouga": [
             "https://story-vl.s3.us-east-1.amazonaws.com/map/merzouga0.JPG",
@@ -1087,7 +1085,7 @@
 
         cities.forEach(city => {
             if (currentZoom >= city.zoomLevel){
-                if (cityImages[city.name].length > 0) {
+                if (cityImages.hasOwnProperty(city.name) && cityImages[city.name].length > 0) {
                     var icon = L.divIcon({
                         className: "custom-icon",
                         html: `<div class='custom-popup'>
@@ -1097,8 +1095,6 @@
                         iconSize: [100, 100],
                         iconAnchor: [50, 20]
                     });
-
-
                 }
                 else{
                     var icon = L.divIcon({
