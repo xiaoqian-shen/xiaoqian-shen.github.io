@@ -57,8 +57,7 @@
             text-align: center;
         }
         .gallery-popup img {
-            max-width: 800px;
-            max-height: 800px;
+            max-width: 100%;
             object-fit: contain;
             border-radius: 10px;
         }
