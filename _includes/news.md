@@ -11,6 +11,7 @@
 </style>
 
 <ul id="scrollableDiv" onmouseover="showScrollbar()" onmouseout="hideScrollbar()">
+  <li><strong>[Feb. 2025]</strong> One paper (StoryGPT-V) get accepted to CVPR’25 🎉</li>
   <li><strong>[July. 2024]</strong> Two papers get accepted to ECCV’24</li>
   <li><strong>[Mar. 2024]</strong> One paper (HyperCGAN) gets accepted to CVPR’24</li>
   <li><strong>[Jan. 2024]</strong> One paper (MiniGPT-4) gets accepted to ICLR’24</li>
