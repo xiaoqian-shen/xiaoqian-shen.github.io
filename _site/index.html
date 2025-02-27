@@ -767,11 +767,20 @@
             color: black;
             text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
             text-align: center;
-            background: rgba(255, 255, 255, 0.4);
             padding: 1px 3px;
             border-radius: 3px;
             position: absolute;
-            transform: translateY(-20px) translateX(-32px);
+            transform: translateY(-15px) translateX(-32px);
+        }
+        .popup-text-only {
+            font-size: 8px;
+            font-weight: bold;
+            color: black;
+            text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+            text-align: center;
+            padding: 1px 3px;
+            border-radius: 3px;
+            position: absolute;
         }
         .gallery-popup {
             display: none;
@@ -894,7 +903,7 @@
                 }
             }).addTo(map);
         });
-    
+
     var cities = [
         // Europe
         { name: "Paris", coords: [48.8566, 2.3522], zoomLevel: 3 },
@@ -951,7 +960,7 @@
             "https://story-vl.s3.us-east-1.amazonaws.com/map/budapest1.jpg"
         ],
         "Bratislava": [
-            
+
         ],
         "Barcelona": [
             "https://story-vl.s3.us-east-1.amazonaws.com/map/barcelona0.JPG",
@@ -978,13 +987,13 @@
             "https://story-vl.s3.us-east-1.amazonaws.com/map/santorini1.JPG",
         ],
         "San Francisco": [
-            
+
         ],
         "Mexico City": [
-            
+
         ],
         "Guanajuato": [
-            
+
         ],
         "Vancouver": [
            "https://story-vl.s3.us-east-1.amazonaws.com/map/vancouver0.JPG",
@@ -1005,19 +1014,19 @@
             "https://story-vl.s3.us-east-1.amazonaws.com/map/hanoi3.JPG",
         ],
         "Ella": [
-            
+
         ],
         "Sigiriya": [
-            
+
         ],
         "Cairo": [
-            
+
         ],
         "Aswan": [
-            
+
         ],
         "Luxor": [
-            
+
         ],
         "Merzouga": [
             "https://story-vl.s3.us-east-1.amazonaws.com/map/merzouga0.JPG",
@@ -1077,18 +1086,31 @@
         var currentZoom = map.getZoom();
 
         cities.forEach(city => {
-            if (currentZoom >= city.zoomLevel && cityImages[city.name].length > 0) {
-                var icon = L.divIcon({  
-                    className: "custom-icon",
-                    html: `<div class='custom-popup'>
-                              <img class='popup-image' src='${cityImages[city.name][0]}' data-city='${city.name}' />
-                              <span class='popup-text'>${city.name}</span>
-                           </div>`,
-                    iconSize: [100, 100],
-                    iconAnchor: [50, 20]
-                });
+            if (currentZoom >= city.zoomLevel){
+                if (cityImages[city.name].length > 0) {
+                    var icon = L.divIcon({
+                        className: "custom-icon",
+                        html: `<div class='custom-popup'>
+                                  <img class='popup-image' src='${cityImages[city.name][0]}' data-city='${city.name}' />
+                                  <span class='popup-text'>${city.name}</span>
+                               </div>`,
+                        iconSize: [100, 100],
+                        iconAnchor: [50, 20]
+                    });
 
-                var marker = L.marker(city.coords, { icon: icon }).addTo(map);
+
+                }
+                else{
+                    var icon = L.divIcon({
+                        className: "custom-icon",
+                        html: `<div class='custom-popup'>
+                                  <span class='popup-text-only'>${city.name}</span>
+                               </div>`,
+                        iconSize: [100, 100],
+                        iconAnchor: [50, 20]
+                    });
+                }
+                var marker = L.marker(city.coords, {icon: icon}).addTo(map);
                 markers.push(marker);
             }
         });
