@@ -302,6 +302,16 @@
             "https://story-vl.s3.us-east-1.amazonaws.com/map/chefchaouen0.JPG",
             "https://story-vl.s3.us-east-1.amazonaws.com/map/chefchaouen1.JPG",
         ],
+        "Colombo": [
+            "https://story-vl.s3.us-east-1.amazonaws.com/map/colombo1.jpg",
+            "https://story-vl.s3.us-east-1.amazonaws.com/map/colombo0.JPG",
+        ],
+        "Ella": [
+            "https://story-vl.s3.us-east-1.amazonaws.com/map/ella0.jpg"
+        ],
+        "San Francisco": [
+             "https://story-vl.s3.us-east-1.amazonaws.com/map/sf0.JPG"
+        ],
     };
 
     var currentCity = "";
