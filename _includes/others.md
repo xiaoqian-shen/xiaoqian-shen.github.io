@@ -224,6 +224,14 @@
     ];
 
     var cityImages = {
+        "Guanajuato": [
+            "https://story-vl.s3.us-east-1.amazonaws.com/map/guanajuato1.JPG",
+            "https://story-vl.s3.us-east-1.amazonaws.com/map/guanajuato0.JPG",
+        ],
+        "Mexico City": [
+            "https://story-vl.s3.us-east-1.amazonaws.com/map/mexico0.JPG",
+            "https://story-vl.s3.us-east-1.amazonaws.com/map/mexico1.JPG",
+        ],
         "Paris": [
             "https://story-vl.s3.us-east-1.amazonaws.com/map/paris0.jpg",
             "https://story-vl.s3.us-east-1.amazonaws.com/map/paris1.JPG",
