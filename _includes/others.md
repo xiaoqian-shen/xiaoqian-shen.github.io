@@ -135,6 +135,7 @@
         "Switzerland": ["Geneva", "Interlaken"],
         "Vatican City": ["Vatican City"],
         "Vietnam": ["Hanoi"],
+        "United Kingdom": ["London"],
     };
 
     // Load real country borders from GeoJSON (Only draw visited countries)
@@ -176,6 +177,7 @@
         { name: "Andorra", coords: [42.5063, 1.5218], zoomLevel: 5 },
         { name: "Athens", coords: [37.9838, 23.7275], zoomLevel: 5 },
         { name: "Santorini", coords: [36.3932, 25.4615], zoomLevel: 2 },
+        { name: "London", coords: [51.5072, 0.1276], zoomLevel: 2 },
         // America
         { name: "San Francisco", coords: [37.7749, -122.4194], zoomLevel: 2 },
         { name: "Los Angeles", coords: [34.0522, -118.2436], zoomLevel: 2 },
@@ -319,6 +321,10 @@
         ],
         "San Francisco": [
              "https://story-vl.s3.us-east-1.amazonaws.com/map/sf0.JPG"
+        ],
+        "London": [
+             "https://story-vl.s3.us-east-1.amazonaws.com/map/london1.JPG",
+             "https://story-vl.s3.us-east-1.amazonaws.com/map/london0.JPG",
         ],
     };
 
