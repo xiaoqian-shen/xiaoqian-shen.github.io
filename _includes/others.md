@@ -58,6 +58,7 @@
         }
         .gallery-popup img {
             max-width: 100%;
+            max-height: 80vh;
             object-fit: contain;
             border-radius: 10px;
         }
@@ -117,7 +118,7 @@
         "Sri Lanka": ["Colombo", "Mirissa", "Ella", "Kandy", "Galle"],
         "Australia": ["Sydney", "Melbourne"],
         "Mexico": ["Mexico City", "Guanajuato"],
-        "Italy": ["Rome", "Venice", "Florence"],
+        "Italy": ["Rome", "Venice", "Florence", "Milan"],
         "Spain": ["Barcelona", "Madrid"],
         "Greece": ["Athens", "Santorini"],
         "Turkey": ["Istanbul"],
@@ -136,6 +137,10 @@
         "Vatican City": ["Vatican City"],
         "Vietnam": ["Hanoi"],
         "United Kingdom": ["London"],
+        "Belgium": ["Brussels"],
+        "Netherlands": ["Amsterdam", "The Hague"],
+        "Czech Republic": ["Prague"],
+        "Germany": ["Berlin"],
     };
 
     // Load real country borders from GeoJSON (Only draw visited countries)
@@ -178,6 +183,11 @@
         { name: "Athens", coords: [37.9838, 23.7275], zoomLevel: 5 },
         { name: "Santorini", coords: [36.3932, 25.4615], zoomLevel: 2 },
         { name: "London", coords: [51.5072, 0.1276], zoomLevel: 2 },
+        { name: "Amsterdam", coords: [52.3676, 4.9041], zoomLevel: 2 },
+        { name: "The Hague", coords: [52.0705, 4.3007], zoomLevel: 4 },
+        { name: "Brussels", coords: [50.8503, 4.3517], zoomLevel: 4 },
+        { name: "Berlin", coords: [52.5200, 13.4050], zoomLevel: 2 },
+        { name: "Milan", coords: [45.4642, 9.1900], zoomLevel: 2 },
         // America
         { name: "San Francisco", coords: [37.7749, -122.4194], zoomLevel: 2 },
         { name: "Los Angeles", coords: [34.0522, -118.2436], zoomLevel: 2 },
@@ -325,6 +335,25 @@
         "London": [
              "https://story-vl.s3.us-east-1.amazonaws.com/map/london1.JPG",
              "https://story-vl.s3.us-east-1.amazonaws.com/map/london0.JPG",
+        ],
+        "Milan": [
+             "https://story-vl.s3.us-east-1.amazonaws.com/map/milan0.jpg",
+        ],
+        "Amsterdam": [
+             "https://story-vl.s3.us-east-1.amazonaws.com/map/amsterdam0.JPG",
+        ],
+        "The Hague": [
+             "https://story-vl.s3.us-east-1.amazonaws.com/map/hague0.jpg",
+        ],
+        "Berlin": [
+             "https://story-vl.s3.us-east-1.amazonaws.com/map/berlin0.jpg",
+             "https://story-vl.s3.us-east-1.amazonaws.com/map/berlin1.JPG",
+        ],
+        "Prague": [
+             "https://story-vl.s3.us-east-1.amazonaws.com/map/prague0.jpg",
+        ],
+        "Brussels": [
+             "https://story-vl.s3.us-east-1.amazonaws.com/map/brussels0.jpg",
         ],
     };
 
