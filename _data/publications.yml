@@ -1,4 +1,14 @@
 main:
+  - title: "LongVU: Spatiotemporal Adaptive Compression for Long Video-Language Understanding"
+    authors: <strong>Xiaoqian Shen</strong>, Yunyang Xiong, Changsheng Zhao, Lemeng Wu, Jun Chen, Chenchen Zhu, Zechun Liu, Fanyi Xiao, Balakrishnan Varadarajan, Florian Bordes, Zhuang Liu, Hu Xu, Hyunwoo J. Kim, Bilge Soran, Raghuraman Krishnamoorthi, Mohamed Elhoseiny, Vikas Chandra
+    conference_short: ICML
+    conference: ICML 2025
+    pdf: https://arxiv.org/abs/2410.17434
+    code: https://github.com/Vision-CAIR/LongVU
+    page: https://vision-cair.github.io/LongVU
+    image: ./assets/img/pub/longvu.png
+    type: mllm
+
   - title: "StoryGPT-V: Large Language Models as Consistent Story Visualizers"
     authors: <strong>Xiaoqian Shen</strong>, Mohamed Elhoseiny
     conference_short: CVPR
@@ -8,16 +18,6 @@ main:
     video: ./assets/img/pub/storygptv.mp4
     page: https://xiaoqian-shen.github.io/StoryGPT-V
     type: mllm,genai
-
-  - title: "LongVU: Spatiotemporal Adaptive Compression for Long Video-Language Understanding"
-    authors: <strong>Xiaoqian Shen</strong>, Yunyang Xiong, Changsheng Zhao, Lemeng Wu, Jun Chen, Chenchen Zhu, Zechun Liu, Fanyi Xiao, Balakrishnan Varadarajan, Florian Bordes, Zhuang Liu, Hu Xu, Hyunwoo J. Kim, Bilge Soran, Raghuraman Krishnamoorthi, Mohamed Elhoseiny, Vikas Chandra
-    conference: Arxiv preprint 2024
-    pdf: https://arxiv.org/abs/2410.17434
-    code: https://github.com/Vision-CAIR/LongVU
-    page: https://vision-cair.github.io/LongVU
-    image: ./assets/img/pub/longvu.png
-    type: mllm
-    is_preprint: true
 
   - title: "Goldfish: Vision-Language Understanding of Arbitrarily Long Videos"
     authors: Kirolos Ataallah, <strong>Xiaoqian Shen</strong>, Eslam Abdelrahman, Essam Sleiman, Mingchen Zhuge, Jian Ding, Deyao Zhu, Jürgen Schmidhuber, Mohamed Elhoseiny
