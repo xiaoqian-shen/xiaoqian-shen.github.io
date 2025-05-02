@@ -47,6 +47,16 @@ main:
     page: https://hypercgan-web.s3.amazonaws.com/index.html
     type: genai
 
+  - title: "MiniGPT-v2: Large Language Model as a Unified Interface for Vision-Language Multi-task Learning"
+    authors: Jun Chen, Deyao Zhu, <strong><u>Xiaoqian Shen</u></strong>, Xiang Li, Zechun Liu, Pengchuan Zhang, Raghuraman Krishnamoorthi, Vikas Chandra, Yunyang Xiong, Mohamed Elhoseiny
+    conference: Arxiv preprint 2023
+    pdf: https://arxiv.org/abs/2310.09478
+    code: https://github.com/Vision-CAIR/MiniGPT-4
+    page: https://minigpt-v2.github.io
+    image: ./assets/img/pub/minigpt-v2.png
+    type: mllm
+    is_preprint: true
+
   - title: "MiniGPT-4: Enhancing Vision-language Understanding with Advanced Large Language Models"
     authors: Deyao Zhu*, Jun Chen*, <strong><u>Xiaoqian Shen</u></strong>, Xiang Li, Mohamed Elhoseiny
     conference_short: ICLR
@@ -57,16 +67,6 @@ main:
     image: ./assets/img/pub/minigpt4.png
     notes: Github 20k+ Stars
     type: mllm
-
-  - title: "MiniGPT-v2: Large Language Model as a Unified Interface for Vision-Language Multi-task Learning"
-    authors: Jun Chen, Deyao Zhu, <strong><u>Xiaoqian Shen</u></strong>, Xiang Li, Zechun Liu, Pengchuan Zhang, Raghuraman Krishnamoorthi, Vikas Chandra, Yunyang Xiong, Mohamed Elhoseiny
-    conference: Arxiv preprint 2023
-    pdf: https://arxiv.org/abs/2310.09478
-    code: https://github.com/Vision-CAIR/MiniGPT-4
-    page: https://minigpt-v2.github.io
-    image: ./assets/img/pub/minigpt-v2.png
-    type: mllm
-    is_preprint: true
 
   - title: "HRS-Bench: Holistic, Reliable and Scalable Benchmark for Text-to-Image Models"
     authors: Eslam Bakr, <strong><u>Xiaoqian Shen</u></strong>*, Pengzhan Sun*, Faizan Khan*, Erran Li, Mohamed Elhoseiny
@@ -88,15 +88,15 @@ main:
     page: https://xiaoqian-shen.github.io/MoStGAN-V
     type: genai
 
-  - title: "ChatGPT Asks, BLIP-2 Answers: Automatic Questioning Towards Enriched Visual Descriptions"
-    authors: Deyao Zhu, Jun Chen, Kilichbek Haydarov, <strong><u>Xiaoqian Shen</u></strong>, Wenxuan Zhang, Mohamed Elhoseiny
-    conference_short: TMLR
-    conference: TMLR
-    pdf: https://arxiv.org/abs/2303.06594
-    code: https://github.com/Vision-CAIR/ChatCaptioner
-    image: ./assets/img/pub/chatcap.gif
-    notes: Github 400+ Stars
-    type: mllm
+#  - title: "ChatGPT Asks, BLIP-2 Answers: Automatic Questioning Towards Enriched Visual Descriptions"
+#    authors: Deyao Zhu, Jun Chen, Kilichbek Haydarov, <strong><u>Xiaoqian Shen</u></strong>, Wenxuan Zhang, Mohamed Elhoseiny
+#    conference_short: TMLR
+#    conference: TMLR
+#    pdf: https://arxiv.org/abs/2303.06594
+#    code: https://github.com/Vision-CAIR/ChatCaptioner
+#    image: ./assets/img/pub/chatcap.gif
+#    notes: Github 400+ Stars
+#    type: mllm
 
   - title: "Exploring hierarchical graph representation for large-scale zero-shot image classification"
     authors: Kai Yi, <strong><u>Xiaoqian Shen</u></strong>, Yunhao Gou, Mohamed Elhoseiny
@@ -107,9 +107,9 @@ main:
     page: https://kaiyi.me/p/hgrnet
     conference_short: ECCV
 
-  - title: "Multi-ConDoS: Multimodal Contrastive Domain Sharing Generative Adversarial Networks for Self-Supervised Medical Image Segmentation"
-    authors: Jiaojiao Zhang, Shuo Zhang, <strong><u>Xiaoqian Shen</u></strong>, Thomas Lukasiewicz, Zhenghua Xu
-    conference: IEEE Transactions on Medical Imaging
-    pdf: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10167829
-    image: ./assets/img/pub/condos.png
-    conference_short: TMI
+#  - title: "Multi-ConDoS: Multimodal Contrastive Domain Sharing Generative Adversarial Networks for Self-Supervised Medical Image Segmentation"
+#    authors: Jiaojiao Zhang, Shuo Zhang, <strong><u>Xiaoqian Shen</u></strong>, Thomas Lukasiewicz, Zhenghua Xu
+#    conference: IEEE Transactions on Medical Imaging
+#    pdf: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10167829
+#    image: ./assets/img/pub/condos.png
+#    conference_short: TMI
