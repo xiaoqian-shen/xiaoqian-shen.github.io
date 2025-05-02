@@ -1,6 +1,6 @@
 main:
   - title: "LongVU: Spatiotemporal Adaptive Compression for Long Video-Language Understanding"
-    authors: <strong>Xiaoqian Shen</strong>, Yunyang Xiong, Changsheng Zhao, Lemeng Wu, Jun Chen, Chenchen Zhu, Zechun Liu, Fanyi Xiao, Balakrishnan Varadarajan, Florian Bordes, Zhuang Liu, Hu Xu, Hyunwoo J. Kim, Bilge Soran, Raghuraman Krishnamoorthi, Mohamed Elhoseiny, Vikas Chandra
+    authors: <strong><u>Xiaoqian Shen</u></strong>, Yunyang Xiong, Changsheng Zhao, Lemeng Wu, Jun Chen, Chenchen Zhu, Zechun Liu, Fanyi Xiao, Balakrishnan Varadarajan, Florian Bordes, Zhuang Liu, Hu Xu, Hyunwoo J. Kim, Bilge Soran, Raghuraman Krishnamoorthi, Mohamed Elhoseiny, Vikas Chandra
     conference_short: ICML
     conference: ICML 2025
     pdf: https://arxiv.org/abs/2410.17434
@@ -10,7 +10,7 @@ main:
     type: mllm
 
   - title: "StoryGPT-V: Large Language Models as Consistent Story Visualizers"
-    authors: <strong>Xiaoqian Shen</strong>, Mohamed Elhoseiny
+    authors: <strong><u>Xiaoqian Shen</u></strong>, Mohamed Elhoseiny
     conference_short: CVPR
     conference: CVPR 2025
     pdf: https://arxiv.org/abs/2312.02252
@@ -20,7 +20,7 @@ main:
     type: mllm,genai
 
   - title: "Goldfish: Vision-Language Understanding of Arbitrarily Long Videos"
-    authors: Kirolos Ataallah, <strong>Xiaoqian Shen</strong>, Eslam Abdelrahman, Essam Sleiman, Mingchen Zhuge, Jian Ding, Deyao Zhu, Jürgen Schmidhuber, Mohamed Elhoseiny
+    authors: Kirolos Ataallah, <strong><u>Xiaoqian Shen</u></strong>, Eslam Abdelrahman, Essam Sleiman, Mingchen Zhuge, Jian Ding, Deyao Zhu, Jürgen Schmidhuber, Mohamed Elhoseiny
     conference_short: ECCV
     conference: ECCV 2024
     pdf: https://arxiv.org/abs/2407.12679
@@ -30,7 +30,7 @@ main:
     type: mllm
 
   - title: "Affective Visual Dialog: A Large-Scale Benchmark for Emotional Reasoning Based on Visually Grounded Conversations"
-    authors: Kilichbek Haydarov, <strong>Xiaoqian Shen</strong>, Avinash Madasu, Mahmoud Salem, Li-Jia Li, Gamaleldin Elsayed, Mohamed Elhoseiny
+    authors: Kilichbek Haydarov, <strong><u>Xiaoqian Shen</u></strong>, Avinash Madasu, Mahmoud Salem, Li-Jia Li, Gamaleldin Elsayed, Mohamed Elhoseiny
     conference_short: ECCV
     conference: ECCV 2024
     pdf: https://arxiv.org/abs/2308.16349
@@ -39,7 +39,7 @@ main:
     image: ./assets/img/pub/dial.png
 
   - title: "Adversarial text to continous image generation"
-    authors: Kilichbek Haydarov, Aashiq Muhamed, <strong>Xiaoqian Shen</strong>, Jovana Lazarevic, Ivan Skorokhodov, Chamuditha Jayanga Galappaththige, Mohamed Elhoseiny
+    authors: Kilichbek Haydarov, Aashiq Muhamed, <strong><u>Xiaoqian Shen</u></strong>, Jovana Lazarevic, Ivan Skorokhodov, Chamuditha Jayanga Galappaththige, Mohamed Elhoseiny
     conference_short: CVPR
     conference: CVPR 2024
     pdf: https://openaccess.thecvf.com/content/CVPR2024/papers/Haydarov_Adversarial_Text_to_Continuous_Image_Generation_CVPR_2024_paper.pdf
@@ -48,7 +48,7 @@ main:
     type: genai
 
   - title: "MiniGPT-4: Enhancing Vision-language Understanding with Advanced Large Language Models"
-    authors: Deyao Zhu*, Jun Chen*, <strong>Xiaoqian Shen</strong>, Xiang Li, Mohamed Elhoseiny
+    authors: Deyao Zhu*, Jun Chen*, <strong><u>Xiaoqian Shen</u></strong>, Xiang Li, Mohamed Elhoseiny
     conference_short: ICLR
     conference: ICLR 2024
     pdf: https://arxiv.org/abs/2304.10592
@@ -59,7 +59,7 @@ main:
     type: mllm
 
   - title: "MiniGPT-v2: Large Language Model as a Unified Interface for Vision-Language Multi-task Learning"
-    authors: Jun Chen, Deyao Zhu, <strong>Xiaoqian Shen</strong>, Xiang Li, Zechun Liu, Pengchuan Zhang, Raghuraman Krishnamoorthi, Vikas Chandra, Yunyang Xiong, Mohamed Elhoseiny
+    authors: Jun Chen, Deyao Zhu, <strong><u>Xiaoqian Shen</u></strong>, Xiang Li, Zechun Liu, Pengchuan Zhang, Raghuraman Krishnamoorthi, Vikas Chandra, Yunyang Xiong, Mohamed Elhoseiny
     conference: Arxiv preprint 2023
     pdf: https://arxiv.org/abs/2310.09478
     code: https://github.com/Vision-CAIR/MiniGPT-4
@@ -69,7 +69,7 @@ main:
     is_preprint: true
 
   - title: "HRS-Bench: Holistic, Reliable and Scalable Benchmark for Text-to-Image Models"
-    authors: Eslam Bakr, <strong>Xiaoqian Shen*</strong>, Pengzhan Sun*, Faizan Khan*, Erran Li, Mohamed Elhoseiny
+    authors: Eslam Bakr, <strong><u>Xiaoqian Shen</u></strong>*, Pengzhan Sun*, Faizan Khan*, Erran Li, Mohamed Elhoseiny
     conference_short: ICCV
     conference: ICCV 2023
     pdf: https://arxiv.org/abs/2304.05390
@@ -79,7 +79,7 @@ main:
     type: genai
 
   - title: "MoStGAN-V: Video Generation with Temporal Motion Styles"
-    authors: <strong>Xiaoqian Shen</strong>, Xiang Li, Mohamed Elhoseiny
+    authors: <strong><u>Xiaoqian Shen</u></strong>, Xiang Li, Mohamed Elhoseiny
     conference_short: CVPR
     conference: CVPR 2023
     pdf: https://arxiv.org/abs/2304.02777
@@ -89,7 +89,7 @@ main:
     type: genai
 
   - title: "ChatGPT Asks, BLIP-2 Answers: Automatic Questioning Towards Enriched Visual Descriptions"
-    authors: Deyao Zhu, Jun Chen, Kilichbek Haydarov, <strong>Xiaoqian Shen</strong>, Wenxuan Zhang, Mohamed Elhoseiny
+    authors: Deyao Zhu, Jun Chen, Kilichbek Haydarov, <strong><u>Xiaoqian Shen</u></strong>, Wenxuan Zhang, Mohamed Elhoseiny
     conference_short: TMLR
     conference: TMLR
     pdf: https://arxiv.org/abs/2303.06594
@@ -99,7 +99,7 @@ main:
     type: mllm
 
   - title: "Exploring hierarchical graph representation for large-scale zero-shot image classification"
-    authors: Kai Yi, <strong>Xiaoqian Shen</strong>, Yunhao Gou, Mohamed Elhoseiny
+    authors: Kai Yi, <strong><u>Xiaoqian Shen</u></strong>, Yunhao Gou, Mohamed Elhoseiny
     conference: ECCV 2022
     pdf: https://arxiv.org/abs/2203.01386
     image: ./assets/img/pub/hgr-net.png
@@ -108,7 +108,7 @@ main:
     conference_short: ECCV
 
   - title: "Multi-ConDoS: Multimodal Contrastive Domain Sharing Generative Adversarial Networks for Self-Supervised Medical Image Segmentation"
-    authors: Jiaojiao Zhang, Shuo Zhang, <strong>Xiaoqian Shen</strong>, Thomas Lukasiewicz, Zhenghua Xu
+    authors: Jiaojiao Zhang, Shuo Zhang, <strong><u>Xiaoqian Shen</u></strong>, Thomas Lukasiewicz, Zhenghua Xu
     conference: IEEE Transactions on Medical Imaging
     pdf: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10167829
     image: ./assets/img/pub/condos.png
