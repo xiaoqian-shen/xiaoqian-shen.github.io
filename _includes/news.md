@@ -11,6 +11,7 @@
 </style>
 
 <ul id="scrollableDiv" onmouseover="showScrollbar()" onmouseout="hideScrollbar()">
+  <li><strong>[Sep. 2025]</strong> One paper (<a href="">Vgent</a>) get accepted to NeurIPS’25 (Spotlight) 🎉</li>
   <li><strong>[May. 2025]</strong> One paper (<a href="https://arxiv.org/abs/2410.17434">LongVU</a>) get accepted to ICML’25 🎉</li>
   <li><strong>[Feb. 2025]</strong> One paper (<a href="https://arxiv.org/abs/2312.02252">StoryGPT-V</a>) get accepted to CVPR’25 🎉</li>
   <li><strong>[July. 2024]</strong> Two papers (<a href="https://arxiv.org/abs/2407.12679">GoldFish</a>, <a href="https://arxiv.org/abs/2308.16349">AffectVisDial</a>) get accepted to ECCV’24</li>

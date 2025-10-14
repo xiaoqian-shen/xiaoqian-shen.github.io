@@ -87,7 +87,7 @@
 
       <h2 id="about-me">About Me</h2>
 
-<p>I am currently a PhD student of Computer Science at <a href="https://cemse.kaust.edu.sa/">King Abdullah University of Science and Technology</a> supervised by <a href="https://cemse.kaust.edu.sa/people/person/mohamed-elhoseiny">Mohamed Elhoseiny</a>. Before that, I received BSc in Computer Science from <a href="https://www.jlu.edu.cn/">Jilin University</a>, China.</p>
+<p>I am currently a PhD student of Computer Science at <a href="https://cemse.kaust.edu.sa/">King Abdullah University of Science and Technology</a> supervised by <a href="https://cemse.kaust.edu.sa/people/person/mohamed-elhoseiny">Mohamed Elhoseiny</a>. Before that, I received BSc in Computer Science from <a href="https://www.jlu.edu.cn/">Jilin University</a>, China. I have been fortunate to develop research and industry experience through internships at Meta and Nvidia.</p>
 
 <h2 id="research-interests">Research Interests</h2>
 
@@ -106,8 +106,8 @@
 </style>
 
 <ul>
-  <li><strong>Generative Models:</strong> Image Generation (<a class="paper-link" href="https://openaccess.thecvf.com/content/CVPR2024/papers/Haydarov_Adversarial_Text_to_Continuous_Image_Generation_CVPR_2024_paper.pdf">HyperCGAN<sub class="paper-tag">CVPR</sub></a>), Video Generation (<a class="paper-link" href="https://arxiv.org/abs/2304.02777">MoStGAN-V<sub class="paper-tag">CVPR</sub></a>)</li>
-  <li><strong>Vision-Language:</strong> Multi-Modal Comprehension (<a class="paper-link" href="https://arxiv.org/abs/2410.17434">LongVU<sub class="paper-tag">ICML</sub></a>, <a class="paper-link" href="https://arxiv.org/abs/2407.12679">GoldFish<sub class="paper-tag">ECCV</sub></a>, <a class="paper-link" href="https://arxiv.org/abs/2304.10592">MiniGPT-4<sub class="paper-tag">ICLR</sub></a>) and Generation (<a class="paper-link" href="https://arxiv.org/abs/2312.02252">StoryGPT-V<sub class="paper-tag">CVPR</sub></a>)</li>
+  <li><strong>Generative Models:</strong> Image Generation, Video Generation (<a class="paper-link" href="https://arxiv.org/abs/2304.02777">MoStGAN-V<sub class="paper-tag">CVPR</sub></a>, <a class="paper-link" href="https://arxiv.org/abs/2312.02252">StoryGPT-V<sub class="paper-tag">CVPR</sub></a>)</li>
+  <li><strong>Vision-Language:</strong> Multi-Modal Comprehension (<a class="paper-link" href="">Vgent<sub class="paper-tag">NeurIPS</sub></a>, <a class="paper-link" href="https://arxiv.org/abs/2410.17434">LongVU<sub class="paper-tag">ICML</sub></a>, <a class="paper-link" href="https://arxiv.org/abs/2304.10592">MiniGPT-4<sub class="paper-tag">ICLR</sub></a>)</li>
 </ul>
 
 <h2 id="news">News</h2>
@@ -123,6 +123,7 @@
 </style>
 
 <ul id="scrollableDiv" onmouseover="showScrollbar()" onmouseout="hideScrollbar()">
+  <li><strong>[Sep. 2025]</strong> One paper (<a href="">Vgent</a>) get accepted to NeurIPS’25 (Spotlight) 🎉</li>
   <li><strong>[May. 2025]</strong> One paper (<a href="https://arxiv.org/abs/2410.17434">LongVU</a>) get accepted to ICML’25 🎉</li>
   <li><strong>[Feb. 2025]</strong> One paper (<a href="https://arxiv.org/abs/2312.02252">StoryGPT-V</a>) get accepted to CVPR’25 🎉</li>
   <li><strong>[July. 2024]</strong> Two papers (<a href="https://arxiv.org/abs/2407.12679">GoldFish</a>, <a href="https://arxiv.org/abs/2308.16349">AffectVisDial</a>) get accepted to ECCV’24</li>
@@ -183,123 +184,94 @@
 </li>
 </ul>
 
-<script>
-  let activeBlock = null; // To keep track of the currently active block
-
-  // Show publications based on type
-  function showPublications(type) {
-    const allItems = document.querySelectorAll('.pub-item');
-
-    // Show or hide items based on the type
-    allItems.forEach(item => {
-      const itemTypes = item.getAttribute('data-type').split(',');
-      if (type === 'all' || itemTypes.includes(type)) {
-        item.style.display = 'block'; // Show matching items
-      } else {
-        item.style.display = 'none'; // Hide non-matching items
-      }
-    });
-  }
-
-  // Function to handle mouse enter and keep the active type
-  function handleMouseEnter(block) {
-    // Remove the active class from the previously active block
-    if (activeBlock) {
-      activeBlock.classList.remove('active');
-    }
-    
-    // Set the current block as active and show its publications
-    activeBlock = block;
-    activeBlock.classList.add('active');
-    showPublications(block.getAttribute('data-type')); // Show publications for the active type
-  }
-
-  // Show all publications by default on page load
-  window.onload = function() {
-    showPublications('all');
-  };
-</script>
-
-<!-- CSS to style the filter blocks and publication items -->
-<style>
-  .pub-type-filter {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 20px;
-  }
-
-  .pub-type {
-    width: 80px; /* Set a fixed width for all blocks */
-    height: 26px; /* Set a fixed height */
-    line-height: 24px; /* Vertically center the text */
-    background-color: #f1f1f1;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    margin-right: 10px;
-    border: 2px solid transparent;
-  }
-
-  .pub-type[data-type="all"] {
-      background-color: #aadaac; /* Green */
-      /*color: #4CAF50;*/
-  }
-    
-  .pub-type[data-type="mllm"] {
-      background-color: #f4a286; /* Blue */
-  }
-    
-  .pub-type[data-type="genai"] {
-      background-color: #9abcec; /* Orange */
-  }
-
-/* Hover state */
-.pub-type:hover {
-  opacity: 0.8; /* Slight transparency on hover */
-}
-
-/* Active class for keeping the border color */
-.active {
-  border-color: inherit; /* Retain the inherited border color */
-}
-
-/* Change background and text color on hover */
-.pub-type[data-type="all"]:hover,
-.active[data-type="all"] {
-  background-color: #4dae50; /* Darker green */
-  color: #e0e0e0; /* Light gray text */
-}
-
-.pub-type[data-type="mllm"]:hover,
-.active[data-type="mllm"] {
-  background-color: #e64a19; /* Darker blue */ 
-  color: white; /* White text */
-}
-
-.pub-type[data-type="genai"]:hover,
-.active[data-type="genai"] {
-  background-color: #1e88e5; /* Darker orange */
-  color: white; /* White text */
-}
-
-  .pub-item {
-    display: none; /* Initially hidden */
-  }
-</style>
-
 <p><br /></p>
 <h2 id="publications" style="margin: 2px 0px -15px;">Publications <temp style="font-size:15px;">[</temp><a href="https://scholar.google.com/citations?hl=en&amp;user=uToGtIwAAAAJ" target="_blank" style="font-size:15px;">Google Scholar</a><temp style="font-size:15px;">]</temp></h2>
 
 <div class="publications">
 <ol class="bibliography">
-
+<!--
 <div class="pub-type-filter">
   <div class="pub-type" data-type="all" onmouseover="showPublications('all')">All</div>
   <div class="pub-type" data-type="genai" onmouseover="showPublications('genai')">GenAI</div>
   <div class="pub-type" data-type="mllm" onmouseover="showPublications('mllm')">MLLM</div>
 </div>
+-->
+
+
+
+<li class="pub-item" data-type="mllm">
+<div class="pub-row">
+  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+     
+    <img src="./assets/img/pub/zoom.png" playsinline="" class="teaser img-fluid z-depth-1" style="width=100;height=40%" />
+    
+    
+    
+     
+    <abbrp class="badge">Preprint</abbrp>
+    
+  </div>
+  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+      <div class="title"><a href="">Zoom-Zero: Reinforced Coarse-to-Fine Video Understanding via Temporal Zoom-in</a></div>
+      <div class="author"><strong><u>Xiaoqian Shen</u></strong>, Min-Hung Chen, Yu-Chiang Frank Wang, Mohamed Elhoseiny, Ryo Hachiuma</div>
+      <div class="periodical"><em>Arxiv preprint 2025</em>
+      </div>
+    <div class="links">
+       
+      <a href="https://xiaoqian-shen.github.io/Zoom-Zero/" target="_blank" class="btn btn-sm z-depth-0" role="button" style="font-size:12px;">Project Page</a>
+      
+      
+       
+      <a href="https://github.com/xiaoqian-shen/Zoom-Zero" target="_blank" class="btn btn-sm z-depth-0" role="button" style="font-size:12px;">Code</a>
+      
+      
+       
+      <strong> &nbsp; <i style="color:#e74d3c">Work done at Nvidia</i></strong>
+      
+      
+    </div>
+  </div>
+</div>
+<br />
+</li>
+
+
+
+<li class="pub-item" data-type="mllm">
+<div class="pub-row">
+  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+     
+    <img src="./assets/img/pub/vgent.png" playsinline="" class="teaser img-fluid z-depth-1" style="width=100;height=40%" />
+    
+    
+     
+    <abbr class="badge">NeurIPS</abbr>
+    
+    
+  </div>
+  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+      <div class="title"><a href="">Vgent: Graph-based Retrieval-Reasoning-Augmented Generation For Long Video Understanding</a></div>
+      <div class="author"><strong><u>Xiaoqian Shen</u></strong>, Wenxuan Zhang, Jun Chen, Mohamed Elhoseiny</div>
+      <div class="periodical"><em>NeurIPS 2025</em>
+      </div>
+    <div class="links">
+       
+      <a href="https://xiaoqian-shen.github.io/Vgent/" target="_blank" class="btn btn-sm z-depth-0" role="button" style="font-size:12px;">Project Page</a>
+      
+      
+       
+      <a href="https://github.com/xiaoqian-shen/Vgent" target="_blank" class="btn btn-sm z-depth-0" role="button" style="font-size:12px;">Code</a>
+      
+      
+       
+      <strong> &nbsp; <i style="color:#e74d3c">Spotlight (Top 3%)</i></strong>
+      
+      
+    </div>
+  </div>
+</div>
+<br />
+</li>
 
 
 
@@ -331,6 +303,8 @@
       <a href="https://github.com/Vision-CAIR/LongVU" target="_blank" class="btn btn-sm z-depth-0" role="button" style="font-size:12px;">Code</a>
       
       
+       
+      <strong> &nbsp; <i style="color:#e74d3c">Work done at Meta</i></strong>
       
       
     </div>
@@ -371,6 +345,46 @@
       <a href="https://github.com/xiaoqian-shen/StoryGPT-V" target="_blank" class="btn btn-sm z-depth-0" role="button" style="font-size:12px;">Code</a>
       
       
+      
+      
+    </div>
+  </div>
+</div>
+<br />
+</li>
+
+
+
+<li class="pub-item" data-type="mllm">
+<div class="pub-row">
+  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+     
+    <img src="./assets/img/pub/minigpt4.png" playsinline="" class="teaser img-fluid z-depth-1" style="width=100;height=40%" />
+    
+    
+     
+    <abbr class="badge">ICLR</abbr>
+    
+    
+  </div>
+  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+      <div class="title"><a href="https://arxiv.org/abs/2304.10592">MiniGPT-4: Enhancing Vision-language Understanding with Advanced Large Language Models</a></div>
+      <div class="author">Deyao Zhu*, Jun Chen*, <strong><u>Xiaoqian Shen</u></strong>, Xiang Li, Mohamed Elhoseiny</div>
+      <div class="periodical"><em>ICLR 2024</em>
+      </div>
+    <div class="links">
+       
+      <a href="https://minigpt-4.github.io" target="_blank" class="btn btn-sm z-depth-0" role="button" style="font-size:12px;">Project Page</a>
+      
+       
+      <a href="https://arxiv.org/abs/2304.10592" target="_blank" class="btn btn-sm z-depth-0" role="button" style="font-size:12px;">PDF</a>
+      
+       
+      <a href="https://github.com/Vision-CAIR/MiniGPT-4" target="_blank" class="btn btn-sm z-depth-0" role="button" style="font-size:12px;">Code</a>
+      
+      
+       
+      <strong> &nbsp; <i style="color:#e74d3c">Github 25k+ Stars, 3k+ Cites</i></strong>
       
       
     </div>
@@ -457,42 +471,6 @@
 
 
 
-<li class="pub-item" data-type="genai">
-<div class="pub-row">
-  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-     
-    <img src="./assets/img/pub/hypercgan.png" playsinline="" class="teaser img-fluid z-depth-1" style="width=100;height=40%" />
-    
-    
-     
-    <abbr class="badge">CVPR</abbr>
-    
-    
-  </div>
-  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Haydarov_Adversarial_Text_to_Continuous_Image_Generation_CVPR_2024_paper.pdf">Adversarial text to continous image generation</a></div>
-      <div class="author">Kilichbek Haydarov, Aashiq Muhamed, <strong><u>Xiaoqian Shen</u></strong>, Jovana Lazarevic, Ivan Skorokhodov, Chamuditha Jayanga Galappaththige, Mohamed Elhoseiny</div>
-      <div class="periodical"><em>CVPR 2024</em>
-      </div>
-    <div class="links">
-       
-      <a href="https://hypercgan-web.s3.amazonaws.com/index.html" target="_blank" class="btn btn-sm z-depth-0" role="button" style="font-size:12px;">Project Page</a>
-      
-       
-      <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Haydarov_Adversarial_Text_to_Continuous_Image_Generation_CVPR_2024_paper.pdf" target="_blank" class="btn btn-sm z-depth-0" role="button" style="font-size:12px;">PDF</a>
-      
-      
-      
-      
-      
-    </div>
-  </div>
-</div>
-<br />
-</li>
-
-
-
 <li class="pub-item" data-type="mllm">
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
@@ -519,84 +497,6 @@
       
        
       <a href="https://github.com/Vision-CAIR/MiniGPT-4" target="_blank" class="btn btn-sm z-depth-0" role="button" style="font-size:12px;">Code</a>
-      
-      
-      
-      
-    </div>
-  </div>
-</div>
-<br />
-</li>
-
-
-
-<li class="pub-item" data-type="mllm">
-<div class="pub-row">
-  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-     
-    <img src="./assets/img/pub/minigpt4.png" playsinline="" class="teaser img-fluid z-depth-1" style="width=100;height=40%" />
-    
-    
-     
-    <abbr class="badge">ICLR</abbr>
-    
-    
-  </div>
-  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="https://arxiv.org/abs/2304.10592">MiniGPT-4: Enhancing Vision-language Understanding with Advanced Large Language Models</a></div>
-      <div class="author">Deyao Zhu*, Jun Chen*, <strong><u>Xiaoqian Shen</u></strong>, Xiang Li, Mohamed Elhoseiny</div>
-      <div class="periodical"><em>ICLR 2024</em>
-      </div>
-    <div class="links">
-       
-      <a href="https://minigpt-4.github.io" target="_blank" class="btn btn-sm z-depth-0" role="button" style="font-size:12px;">Project Page</a>
-      
-       
-      <a href="https://arxiv.org/abs/2304.10592" target="_blank" class="btn btn-sm z-depth-0" role="button" style="font-size:12px;">PDF</a>
-      
-       
-      <a href="https://github.com/Vision-CAIR/MiniGPT-4" target="_blank" class="btn btn-sm z-depth-0" role="button" style="font-size:12px;">Code</a>
-      
-      
-       
-      <strong> &nbsp; <i style="color:#e74d3c">Github 20k+ Stars</i></strong>
-      
-      
-    </div>
-  </div>
-</div>
-<br />
-</li>
-
-
-
-<li class="pub-item" data-type="genai">
-<div class="pub-row">
-  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-     
-    <img src="./assets/img/pub/hrs.png" playsinline="" class="teaser img-fluid z-depth-1" style="width=100;height=40%" />
-    
-    
-     
-    <abbr class="badge">ICCV</abbr>
-    
-    
-  </div>
-  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="https://arxiv.org/abs/2304.05390">HRS-Bench: Holistic, Reliable and Scalable Benchmark for Text-to-Image Models</a></div>
-      <div class="author">Eslam Bakr, <strong><u>Xiaoqian Shen</u></strong>*, Pengzhan Sun*, Faizan Khan*, Erran Li, Mohamed Elhoseiny</div>
-      <div class="periodical"><em>ICCV 2023</em>
-      </div>
-    <div class="links">
-       
-      <a href="https://eslambakr.github.io/hrsbench.github.io" target="_blank" class="btn btn-sm z-depth-0" role="button" style="font-size:12px;">Project Page</a>
-      
-       
-      <a href="https://arxiv.org/abs/2304.05390" target="_blank" class="btn btn-sm z-depth-0" role="button" style="font-size:12px;">PDF</a>
-      
-       
-      <a href="https://github.com/eslambakr/HRS_benchmark" target="_blank" class="btn btn-sm z-depth-0" role="button" style="font-size:12px;">Code</a>
       
       
       
@@ -647,44 +547,6 @@
 
 
 
-<li class="pub-item" data-type="">
-<div class="pub-row">
-  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-     
-    <img src="./assets/img/pub/hgr-net.png" playsinline="" class="teaser img-fluid z-depth-1" style="width=100;height=40%" />
-    
-    
-     
-    <abbr class="badge">ECCV</abbr>
-    
-    
-  </div>
-  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="https://arxiv.org/abs/2203.01386">Exploring hierarchical graph representation for large-scale zero-shot image classification</a></div>
-      <div class="author">Kai Yi, <strong><u>Xiaoqian Shen</u></strong>, Yunhao Gou, Mohamed Elhoseiny</div>
-      <div class="periodical"><em>ECCV 2022</em>
-      </div>
-    <div class="links">
-       
-      <a href="https://kaiyi.me/p/hgrnet" target="_blank" class="btn btn-sm z-depth-0" role="button" style="font-size:12px;">Project Page</a>
-      
-       
-      <a href="https://arxiv.org/abs/2203.01386" target="_blank" class="btn btn-sm z-depth-0" role="button" style="font-size:12px;">PDF</a>
-      
-       
-      <a href="https://github.com/WilliamYi96/hgr-net" target="_blank" class="btn btn-sm z-depth-0" role="button" style="font-size:12px;">Code</a>
-      
-      
-      
-      
-    </div>
-  </div>
-</div>
-<br />
-</li>
-
-
-
 </ol>
 </div>
 
@@ -693,7 +555,7 @@
 <h4 style="margin:0 10px 0;">Conference Reviewers</h4>
 
 <ul style="margin:0 0 5px;">
-  <li>CVPR, ECCV, AAAI, ICLR, ICCV</li>
+  <li>CVPR, ECCV, AAAI, ICLR, ICCV, AAAI</li>
   <li>SIGGRAPH Asia, NeurIPSW</li>
 </ul>
 
@@ -703,446 +565,11 @@
   <li>IJCV, CVIU</li>
 </ul>
 
-<h2 id="others">Others</h2>
+<h4 style="margin:0 10px 0;">Teaching Assistant</h4>
 
-<p><strong>Travel &amp; Photography</strong>: Wanderlust fuels my soul, and through the lens, I capture fleeting moments—whispers of light, echoes of time.</p>
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Interactive Map with Image Gallery</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="https://d3js.org/d3.v6.min.js"></script>
-    <style>
-        #map { width: 100%; height: 400px; position: relative; z-index: 1; }
-        .popup-image {
-            width: 30px;
-            height: 30px;
-            object-fit: cover;
-            aspect-ratio: 1/1;
-            border-radius: 5px;
-            cursor: pointer;
-            border: 2px solid white; /* White border */
-        }
-        .popup-text {
-            font-size: 8px;
-            font-weight: bold;
-            color: black;
-            text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-            text-align: center;
-            padding: 1px 3px;
-            border-radius: 3px;
-            position: absolute;
-            transform: translateY(-15px) translateX(-32px);
-        }
-        .popup-text-only {
-            font-size: 8px;
-            font-weight: bold;
-            color: black;
-            text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-            text-align: center;
-            padding: 1px 3px;
-            border-radius: 3px;
-            position: absolute;
-            transform: translateY(10px) translateX(30px);
-        }
-        .gallery-popup {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: rgba(0, 0, 0, 0.8);
-            padding: 20px;
-            border-radius: 10px;
-            z-index: 10000;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-            text-align: center;
-        }
-        .gallery-popup img {
-            max-width: 100%;
-            max-height: 80vh;
-            object-fit: contain;
-            border-radius: 10px;
-        }
-        .close-btn, .prev-btn, .next-btn {
-            position: absolute;
-            color: white;
-            font-size: 20px;
-            cursor: pointer;
-        }
-        .close-btn { top: 10px; right: 20px; }
-        .prev-btn { top: 50%; left: 20px; transform: translateY(-50%); }
-        .next-btn { top: 50%; right: 20px; transform: translateY(-50%); }
-    </style>
-</head>
-<body>
-
-<div id="map"></div>
-<div class="gallery-popup" id="gallery-popup">
-    <span class="close-btn" onclick="closeGallery()">×</span>
-    <span class="prev-btn" onclick="prevImage()">❮</span>
-    <img id="gallery-img" src="" alt="Gallery Image" />
-    <span class="next-btn" onclick="nextImage()">❯</span>
-</div>
-
-<script>
-    var map = L.map('map').setView([35, 40], 3.4);
-
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; OpenStreetMap contributors'
-    }).addTo(map);
-
-    // Mapping non-English names to English
-    var countryNameMapping = {
-        "États-Unis": "United States of America",
-        "Deutschland": "Germany",
-        "España": "Spain",
-        "Brasil": "Brazil",
-        "Россия": "Russia",
-        "中国": "China",
-        "日本": "Japan",
-        "대한민국": "South Korea",
-        "المملكة العربية السعودية": "Saudi Arabia",
-        "Italia": "Italy",
-        "भारत": "India",
-        "الإمارات العربية المتحدة": "United Arab Emirates",
-        "Türkiye": "Turkey",
-        "México": "Mexico",
-        "United Kingdom": "United Kingdom", // Already correct
-        "France": "France" // Already correct
-    };
-
-    // List of visited countries
-    var visitedList = {
-        "United States of America": ["New York"],
-        "France": ["Paris"],
-        "China": ["Beijing"],
-        "Sri Lanka": ["Colombo", "Mirissa", "Ella", "Kandy", "Galle"],
-        "Australia": ["Sydney", "Melbourne"],
-        "Mexico": ["Mexico City", "Guanajuato"],
-        "Italy": ["Rome", "Venice", "Florence", "Milan"],
-        "Spain": ["Barcelona", "Madrid"],
-        "Greece": ["Athens", "Santorini"],
-        "Turkey": ["Istanbul"],
-        "United Arab Emirates": ["Dubai"],
-        "Oman": ["Muscat"],
-        "Andorra": ["Andorra la Vella"],
-        "Canada": ["Vancouver"],
-        "Bahrain": ["Manama"],
-        "Austria": ["Vienna"],
-        "Hungary": ["Budapest"],
-        "Slovakia": ["Bratislava"],
-        "Morocco": ["Marrakesh", "Casablanca", "Tangier", "Merzouga", "Chefchaouen", "Fez"],
-        "Egypt": ["Cairo", "Luxor", "Aswan"],
-        "Saudi Arabia": ["Jeddah"],
-        "Switzerland": ["Geneva", "Interlaken"],
-        "Vatican City": ["Vatican City"],
-        "Vietnam": ["Hanoi"],
-        "United Kingdom": ["London"],
-        "Belgium": ["Brussels"],
-        "Netherlands": ["Amsterdam", "The Hague"],
-        "Czech Republic": ["Prague"],
-        "Germany": ["Berlin"],
-    };
-
-    // Load real country borders from GeoJSON (Only draw visited countries)
-    fetch("https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json")
-        .then(response => response.json())
-        .then(data => {
-            L.geoJSON(data, {
-                filter: function (feature) {
-                    let countryName = feature.properties.name;
-                    // Convert to English if needed
-                    if (countryNameMapping[countryName]) {
-                        countryName = countryNameMapping[countryName];
-                    }
-                    return visitedList.hasOwnProperty(countryName);
-                },
-                style: function (feature) {
-                    return { color: "#008000", weight: 2, fillOpacity: 0.3 };  // Green for visited
-                },
-                onEachFeature: function (feature, layer) {
-                    let countryName = feature.properties.name;
-                    // Convert to English if needed
-                    if (countryNameMapping[countryName]) {
-                        countryName = countryNameMapping[countryName];
-                    }
-                    layer.bindTooltip(countryName, { permanent: false, direction: "auto" });
-                }
-            }).addTo(map);
-        });
-
-    var cities = [
-        // Europe
-        { name: "Paris", coords: [48.8566, 2.3522], zoomLevel: 3 },
-        { name: "Istanbul", coords: [41.015137, 28.979530], zoomLevel: 2 },
-        { name: "Vienna", coords: [48.1236, 16.2148], zoomLevel: 2 },
-        { name: "Budapest", coords: [47.497913, 19.040236], zoomLevel: 2 },
-        { name: "Bratislava", coords: [48.1486, 17.1077], zoomLevel: 5 },
-        { name: "Barcelona", coords: [41.3874, 2.1686], zoomLevel: 2 },
-        { name: "Madrid", coords: [40.4167, -3.7033], zoomLevel: 3 },
-        { name: "Andorra", coords: [42.5063, 1.5218], zoomLevel: 5 },
-        { name: "Athens", coords: [37.9838, 23.7275], zoomLevel: 5 },
-        { name: "Santorini", coords: [36.3932, 25.4615], zoomLevel: 2 },
-        { name: "London", coords: [51.5072, 0.1276], zoomLevel: 2 },
-        { name: "Amsterdam", coords: [52.3676, 4.9041], zoomLevel: 2 },
-        { name: "The Hague", coords: [52.0705, 4.3007], zoomLevel: 4 },
-        { name: "Brussels", coords: [50.8503, 4.3517], zoomLevel: 4 },
-        { name: "Berlin", coords: [52.5200, 13.4050], zoomLevel: 2 },
-        { name: "Milan", coords: [45.4642, 9.1900], zoomLevel: 2 },
-        // America
-        { name: "San Francisco", coords: [37.7749, -122.4194], zoomLevel: 2 },
-        { name: "Los Angeles", coords: [34.0522, -118.2436], zoomLevel: 2 },
-        { name: "New York", coords: [40.7128, -74.0060], zoomLevel: 2 },
-        { name: "Boston", coords: [42.3555, -71.0565], zoomLevel: 2 },
-        { name: "Philadelphia", coords: [39.9526, -75.1652], zoomLevel: 2 },
-        { name: "Mexico City", coords: [19.4326, -99.1332], zoomLevel: 3 },
-        { name: "Guanajuato", coords: [21.0190, -101.2574], zoomLevel: 2 },
-        { name: "Vancouver", coords: [49.2827, -123.1207], zoomLevel: 2 },
-        // China
-        { name: "Tibet", coords: [29.6472, 91.1174], zoomLevel: 2 },
-        { name: "Sichuan", coords: [30.6509, 104.0757], zoomLevel: 2 },
-        { name: "Beijing", coords: [39.9042, 116.4074], zoomLevel: 2 },
-        { name: "Fujian", coords: [26.0998, 119.2966], zoomLevel: 2 },
-        { name: "Tianjin", coords: [39.0851, 117.1994], zoomLevel: 2 },
-        { name: "Hebei", coords: [38.0360, 114.4698], zoomLevel: 2 },
-        { name: "Hunan", coords: [28.1142, 112.9833], zoomLevel: 2 },
-        { name: "Guangdong", coords: [23.3417, 113.4244], zoomLevel: 2 },
-        { name: "Gansu", coords: [36.0594, 103.8263], zoomLevel: 2 },
-        { name: "Jilin", coords: [43.8378, 126.5494], zoomLevel: 2 },
-        { name: "Liaoning", coords: [41.8357, 123.4291], zoomLevel: 2 },
-        { name: "Qinghai", coords: [35.7452, 96.1345], zoomLevel: 2 },
-        { name: "Shaanxi", coords: [35.1917, 108.8701], zoomLevel: 2 },
-        { name: "Shandong", coords: [36.6683, 117.0204], zoomLevel: 2 },
-        { name: "Shanxi", coords: [37.8722, 112.5627], zoomLevel: 2 },
-        { name: "Yunnan", coords: [25.0453, 102.7097], zoomLevel: 2 },
-        { name: "Shanghai", coords: [31.2304, 121.4737], zoomLevel: 2 },
-        { name: "Hong Kong", coords: [22.3193, 114.1694], zoomLevel: 2 },
-        // Asia
-        { name: "Hanoi", coords: [21.0278, 105.8342], zoomLevel: 2 },
-        { name: "Ella", coords: [6.8667, 81.0466], zoomLevel: 3 },
-        { name: "Sigiriya", coords: [7.9570, 80.7603], zoomLevel: 2 },
-        { name: "Colombo", coords: [6.9271, 79.8612], zoomLevel: 2 },
-        { name: "Muscat", coords: [23.5880, 58.3829], zoomLevel: 2 },
-        { name: "Jeddah", coords: [21.5292, 39.1611], zoomLevel: 2 },
-        // Africa
-        { name: "Cairo", coords: [30.0444, 31.2357], zoomLevel: 3 },
-        { name: "Aswan", coords: [24.0889, 32.8998], zoomLevel: 2 },
-        { name: "Luxor", coords: [25.6872, 32.6396], zoomLevel: 3 },
-        { name: "Merzouga", coords: [31.0802, -4.0134], zoomLevel: 2 },
-        { name: "Marrakesh", coords: [31.6225, -7.9898], zoomLevel: 5 },
-        { name: "Tangier", coords: [35.7595, -5.8340], zoomLevel: 3 },
-        { name: "Fez", coords: [34.0181, -5.0078], zoomLevel: 5 },
-        { name: "Chefchaouen", coords: [35.1688, -5.2684], zoomLevel: 5 },
-        { name: "Casablanca", coords: [33.5731, -7.5898], zoomLevel: 5 },
-    ];
-
-    var cityImages = {
-        "Guanajuato": [
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/guanajuato1.JPG",
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/guanajuato0.JPG",
-        ],
-        "Mexico City": [
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/mexico0.JPG",
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/mexico1.JPG",
-        ],
-        "Paris": [
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/paris0.jpg",
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/paris1.JPG",
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/paris2.JPG"
-        ],
-        "Istanbul": [
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/istanbul0.JPG",
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/istanbul1.JPG",
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/istanbul2.JPG",
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/istanbul3.JPG",
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/istanbul4.JPG",
-        ],
-        "Vienna": [
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/vienna0.JPG",
-        ],
-        "Budapest": [
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/budapest0.JPG",
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/budapest1.jpg"
-        ],
-        "Barcelona": [
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/barcelona0.JPG",
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/barcelona1.JPG",
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/barcelona2.JPG",
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/barcelona3.JPG",
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/barcelona4.JPG",
-        ],
-        "Madrid": [
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/madrid0.JPG",
-        ],
-        "Muscat": [
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/muscat0.JPG",
-        ],
-        "Andorra": [
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/andorra0.JPG",
-        ],
-        "Athens": [
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/athens0.JPG",
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/athens1.JPG",
-        ],
-        "Santorini": [
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/santorini0.JPG",
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/santorini1.JPG",
-        ],
-        "Vancouver": [
-           "https://story-vl.s3.us-east-1.amazonaws.com/map/vancouver0.JPG",
-           "https://story-vl.s3.us-east-1.amazonaws.com/map/vancouver1.JPG",
-           "https://story-vl.s3.us-east-1.amazonaws.com/map/vancouver2.JPG",
-        ],
-        "Tibet": [
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/tibet1.JPG",
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/tibet0.JPG",
-        ],
-        "Sichuan": [
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/sichuan0.JPG",
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/sichuan1.JPG",
-        ],
-        "Hanoi": [
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/hanoi1.JPG",
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/hanoi2.JPG",
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/hanoi3.JPG",
-        ],
-        "Merzouga": [
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/merzouga0.JPG",
-        ],
-        "Marrakesh": [
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/marrakesh0.jpg",
-        ],
-        "Tangier": [
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/tangier0.JPG",
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/tangier1.JPG",
-        ],
-        "Fez": [
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/fes0.JPG",
-        ],
-        "Chefchaouen": [
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/chefchaouen0.JPG",
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/chefchaouen1.JPG",
-        ],
-        "Colombo": [
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/colombo1.jpg",
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/colombo0.JPG",
-        ],
-        "Ella": [
-            "https://story-vl.s3.us-east-1.amazonaws.com/map/ella0.jpg"
-        ],
-        "San Francisco": [
-             "https://story-vl.s3.us-east-1.amazonaws.com/map/sf0.JPG"
-        ],
-        "London": [
-             "https://story-vl.s3.us-east-1.amazonaws.com/map/london1.JPG",
-             "https://story-vl.s3.us-east-1.amazonaws.com/map/london0.JPG",
-        ],
-        "Milan": [
-             "https://story-vl.s3.us-east-1.amazonaws.com/map/milan0.jpg",
-        ],
-        "Amsterdam": [
-             "https://story-vl.s3.us-east-1.amazonaws.com/map/amsterdam0.JPG",
-        ],
-        "The Hague": [
-             "https://story-vl.s3.us-east-1.amazonaws.com/map/hague0.jpg",
-        ],
-        "Berlin": [
-             "https://story-vl.s3.us-east-1.amazonaws.com/map/berlin0.jpg",
-             "https://story-vl.s3.us-east-1.amazonaws.com/map/berlin1.JPG",
-        ],
-        "Prague": [
-             "https://story-vl.s3.us-east-1.amazonaws.com/map/prague0.jpg",
-        ],
-        "Brussels": [
-             "https://story-vl.s3.us-east-1.amazonaws.com/map/brussels0.jpg",
-        ],
-    };
-
-    var currentCity = "";
-    var currentImageIndex = 0;
-
-    function openGallery(city) {
-        if (cityImages[city]) {
-            currentCity = city;
-            currentImageIndex = 0;
-            document.getElementById("gallery-img").src = cityImages[city][currentImageIndex];
-            document.getElementById("gallery-popup").style.display = "block";
-        }
-    }
-
-    function closeGallery() {
-        document.getElementById("gallery-popup").style.display = "none";
-    }
-
-    function nextImage() {
-        if (currentCity && cityImages[currentCity]) {
-            currentImageIndex = (currentImageIndex + 1) % cityImages[currentCity].length;
-            document.getElementById("gallery-img").src = cityImages[currentCity][currentImageIndex];
-        }
-    }
-
-    function prevImage() {
-        if (currentCity && cityImages[currentCity]) {
-            currentImageIndex = (currentImageIndex - 1 + cityImages[currentCity].length) % cityImages[currentCity].length;
-            document.getElementById("gallery-img").src = cityImages[currentCity][currentImageIndex];
-        }
-    }
-
-    var markers = [];
-
-    function updateCityMarkers() {
-        markers.forEach(marker => map.removeLayer(marker)); // Remove old markers
-        markers = [];
-
-        var currentZoom = map.getZoom();
-
-        cities.forEach(city => {
-            if (currentZoom >= city.zoomLevel){
-                if (cityImages.hasOwnProperty(city.name) && cityImages[city.name].length > 0) {
-                    var icon = L.divIcon({
-                        className: "custom-icon",
-                        html: `<div class='custom-popup'>
-                                  <img class='popup-image' src='${cityImages[city.name][0]}' data-city='${city.name}' />
-                                  <span class='popup-text'>${city.name}</span>
-                               </div>`,
-                        iconSize: [100, 100],
-                        iconAnchor: [50, 20]
-                    });
-                }
-                else{
-                    var icon = L.divIcon({
-                        className: "custom-icon",
-                        html: `<div class='custom-popup'>
-                                  <span class='popup-text-only'>${city.name}</span>
-                               </div>`,
-                        iconSize: [100, 100],
-                        iconAnchor: [50, 20]
-                    });
-                }
-                var marker = L.marker(city.coords, {icon: icon}).addTo(map);
-                markers.push(marker);
-            }
-        });
-    }
-
-    map.on("zoomend", updateCityMarkers);
-    updateCityMarkers();
-
-    document.body.addEventListener("click", function (event) {
-        if (event.target.classList.contains("popup-image")) {
-            var city = event.target.getAttribute("data-city");
-            openGallery(city);
-        }
-    });
-
-</script>
-
-</body>
-</html>
+<ul style="margin:0 0 20px;">
+  <li>KAUST CS 283 Deep Generative Modeling</li>
+</ul>
 
 
 
