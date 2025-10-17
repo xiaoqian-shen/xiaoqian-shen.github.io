@@ -1,19 +1,20 @@
 main:
-  - title: "Zoom-Zero: Reinforced Coarse-to-Fine Video Understanding via Temporal Zoom-in"
-    authors: <strong><u>Xiaoqian Shen</u></strong>, Min-Hung Chen, Yu-Chiang Frank Wang, Mohamed Elhoseiny, Ryo Hachiuma
-    conference: Arxiv preprint 2025
-    image: ./assets/img/pub/zoom.png
-    code: https://github.com/xiaoqian-shen/Zoom-Zero
-    page: https://xiaoqian-shen.github.io/Zoom-Zero/
-    is_preprint: true
-    type: mllm
-    notes: Work done at Nvidia
+#  - title: "Zoom-Zero: Reinforced Coarse-to-Fine Video Understanding via Temporal Zoom-in"
+#    authors: <strong><u>Xiaoqian Shen</u></strong>, Min-Hung Chen, Yu-Chiang Frank Wang, Mohamed Elhoseiny, Ryo Hachiuma
+#    conference: Arxiv preprint 2025
+#    image: ./assets/img/pub/zoom.png
+#    code: https://github.com/xiaoqian-shen/Zoom-Zero
+#    page: https://xiaoqian-shen.github.io/Zoom-Zero/
+#    is_preprint: true
+#    type: mllm
+#    notes: Work done at Nvidia
 
   - title: "Vgent: Graph-based Retrieval-Reasoning-Augmented Generation For Long Video Understanding"
     authors: <strong><u>Xiaoqian Shen</u></strong>, Wenxuan Zhang, Jun Chen, Mohamed Elhoseiny
     conference_short: NeurIPS
     conference: NeurIPS 2025
     image: ./assets/img/pub/vgent.png
+    pdf: https://arxiv.org/abs/2510.14032
     code: https://github.com/xiaoqian-shen/Vgent
     page: https://xiaoqian-shen.github.io/Vgent/
     notes: Spotlight (Top 3%)
