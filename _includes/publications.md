@@ -4,13 +4,6 @@
 
 <div class="publications">
 <ol class="bibliography">
-<!--
-<div class="pub-type-filter">
-  <div class="pub-type" data-type="all" onmouseover="showPublications('all')">All</div>
-  <div class="pub-type" data-type="genai" onmouseover="showPublications('genai')">GenAI</div>
-  <div class="pub-type" data-type="mllm" onmouseover="showPublications('mllm')">MLLM</div>
-</div>
--->
 
 {% for link in site.data.publications.main %}
 
@@ -63,7 +56,6 @@
 </li>
 
 {% endfor %}
-
 </ol>
 </div>
 

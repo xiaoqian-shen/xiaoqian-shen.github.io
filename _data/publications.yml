@@ -49,7 +49,7 @@ main:
     code: https://github.com/Vision-CAIR/MiniGPT-4
     page: https://minigpt-4.github.io
     image: ./assets/img/pub/minigpt4.png
-    notes: Github 25k+ Stars, 3k+ Cites
+    notes: Github 25k+ Stars, 4k+ Cites
     type: mllm
 
   # - title: "Goldfish: Vision-Language Understanding of Arbitrarily Long Videos"
