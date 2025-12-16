@@ -141,6 +141,11 @@
         "Netherlands": ["Amsterdam", "The Hague"],
         "Czech Republic": ["Prague"],
         "Germany": ["Berlin"],
+        "Malta": ["Valletta"],
+        "Croatia": ["Dubrovnik"],
+        "Bosnia and Herzegovina": ["Mostar"],
+        "Panama": ["Panama City"],
+        "Peru": ["Lima"],
     };
 
     // Load real country borders from GeoJSON (Only draw visited countries)
