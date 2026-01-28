@@ -6,14 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a43136b1-9845-4ac7-a530-67f644358b7c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/files/resume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/files/resume.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/img/avatar.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/assets/img/profile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/img/profile.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/files/resume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/files/resume.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/avatar.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/img/profile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/profile.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/index.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +116,7 @@
       <workItem from="1765901120042" duration="184000" />
       <workItem from="1765901624640" duration="200000" />
       <workItem from="1769542614601" duration="739000" />
+      <workItem from="1769617516518" duration="546000" />
     </task>
     <servers />
   </component>
