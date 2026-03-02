@@ -1,10 +1,12 @@
 main:
   - title: "Zoom-Zero: Reinforced Coarse-to-Fine Video Understanding via Temporal Zoom-in"
     authors: <strong><u>Xiaoqian Shen</u></strong>, Min-Hung Chen, Yu-Chiang Frank Wang, Mohamed Elhoseiny, Ryo Hachiuma
-    conference: Arxiv preprint
     image: ./assets/img/pub/zoom.png
-    page: https://xiaoqian-shen.github.io/Zoom-Zero/
     is_preprint: true
+    pdf: https://arxiv.org/abs/2512.14273
+    code: https://github.com/xiaoqian-shen/Zoom-Zero
+    page: https://xiaoqian-shen.github.io/Zoom-Zero/
+    conference: ICLR 2026 Workshop on Multimodal Intelligence
     type: mllm
 
   - title: "Vgent: Graph-based Retrieval-Reasoning-Augmented Generation For Long Video Understanding"
